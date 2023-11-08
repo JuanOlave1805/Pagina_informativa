@@ -14,7 +14,7 @@
 <body>
   <!-- Header --> 
   <header class="Header">
-    <div class="Header__Logo">
+    <!-- <div class="Header__Logo">
         <img src="Recurso 1.png" alt="Logo" class="Header__Image">
     </div>
     <nav>
@@ -24,6 +24,23 @@
        </ul>            
     </nav>
     <a class="Header__Button" href="index.html"><button>Noti-ADSO</button></a>
+     -->
+     <div class="Header__Logo">
+      <img src="Recurso 1.png" alt="Logo" class="Header__Image">
+  </div>
+  <nav>
+      <ul class="Header__Nav">
+          <li class="Header__Links"><a href="../index.html">Inicio</a></li>
+          <li class="Header__Links"><a href="../Contacto/index.html">Nosotros</a></li>
+      </ul>            
+  </nav>
+  <div class="Header__Dropdown">
+      <a class="Header__Button" href="index.html">Noti-ADSO</a>
+      <div class="Header__Dropdown-Content">
+        <a href="#Title--ADSO">Noticias ADSO</a>
+        <a href="#Title--Noticias">Noticias del mundo</a>
+      </div>
+  </div>
     
     <a onclick="openNav()" class="Header__Menu" href="#"><button>Menu</button></a>
 
@@ -33,14 +50,14 @@
             <a href="../index.html">Inicio</a>
             <a href="../contacto/index.html">Nosotros</a>
             <a href="index.html">Noti-ADSO</a>
+            <div class="Header__Shortcuts" id="Header__Shortcuts">
+              <a href="#Title--ADSO">Noticias ADSO</a>
+              <a href="#Title--Noticias">Noticias del mundo</a>
+            </div>
         </div>
    </div>
 
 </header>
-<div class="Header__Shortcuts">
-  <a href="#Title--ADSO">Noticias ADSO</a>
-  <a href="#Title--Noticias">Noticias del mundo</a>
-</div>
 
 <!-- Main -->
 
@@ -49,7 +66,7 @@
   <div class="Main__Content">
     <article class="Main__Card">
       <section class="Main__Face Main__Front">
-        <img src="Img noticias/SENA Logo PNG Vector (CDR) Free Download.jfif" alt="Image" class="Main__Image">
+        <img src="Img noticias/Logo sena 2.png" alt="Image" class="Main__Image">
         <h3 class="Main__Title">Guia de inscripcion en sofia plus</h3>
       </section>
       <section class="Main__Face Main__Back">
@@ -81,12 +98,14 @@
       
     <article class="Main__Card">
       <section class="Main__Face Main__Front">
-        <img src="IMG prueba.png" alt="Image" class="Main__Image">
-        <h3 class="Main__Title">Titulo</h3>
+        <img src="Img noticias/Manual aprendiz.jpg" alt="Image" class="Main__Image">
+        <h3 class="Main__Title">Manual del aprendiz</h3>
       </section>
       <section class="Main__Face Main__Back">
-        <h3 class="Main__Title--modif">Titulo Noticia</h3>
-        <p class="Main__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi neque asperiores aperiam? Ullam, at! Cumque quis numquam quibusdam amet consequuntur possimus corporis eos rem officia, est repellendus at! Sapiente!</p>
+        <h3 class="Main__Title--modif">Manual del aprendiz</h3>
+        <p class="Main__Text">
+          Leer el manual del aprendiz es como tener a un amigo sabio siempre a tu lado. Dentro de sus páginas, te espera un mundo de conocimiento y consejos que te ayudarán en tu camino hacia el éxito. ¡No subestimes el poder de este manual! Es como una brújula que te guiará en tus aventuras de aprendizaje. Así que, no lo dudes más, sumérgete en sus páginas y prepárate para descubrir un sinfín de posibilidades que te esperan. ¡Tu futuro te lo agradecerá!
+        </p>
         <div class="Main__Link">
           <a href="https://repositorioterritorium.s3.amazonaws.com/1256/institucion/cms/SAVA/manuales/LMS/aprendiz/6_8/Manual_Aprendiz_version_6_8.pdf">Ver mas</a>
         </div>
@@ -95,97 +114,111 @@
       
     <article class="Main__Card">
       <section class="Main__Face Main__Front">
-        <img src="IMG prueba.png" alt="Image" class="Main__Image">
-        <h3 class="Main__Title">Titulo Noticia</h3>
+        <img src="Img noticias/Ilustración de cursos en línea de diseño plano _ Vector Premium.jpg" alt="Image" class="Main__Image">
+        <h3 class="Main__Title">Cursos cortos, formacion complementaria virtual</h3>
       </section>
       <section class="Main__Face Main__Back">
-        <h3 class="Main__Title--modif">Titulo Noticia</h3>
-        <p class="Main__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi neque asperiores aperiam? Ullam, at! Cumque quis numquam quibusdam amet consequuntur possimus corporis eos rem officia, est repellendus at! Sapiente!</p>
+        <h3 class="Main__Title--modif">Cursos cortos, formacion complementaria virtual</h3>
+        <p class="Main__Text">
+          ¡Los cursos cortos del SENA son como pequeñas ventanas de oportunidad listas para ser abiertas! Descubrirás nuevas habilidades, ampliarás tu horizonte y estarás más preparado para el mundo laboral. ¡No esperes más, sumérgete en esta experiencia de aprendizaje enriquecedora que el SENA tiene para ti! Tu futuro te lo agradecerá.
+        </p>
         <div class="Main__Link">
-          <a href="#">Details</a>
+          <a href="https://ejecuciondelaformacion.sena.edu.co/cursos-cortos">Ver mas</a>
         </div>
       </section>
     </article>
     <article class="Main__Card">
       <section class="Main__Face Main__Front">
-        <img src="IMG prueba.png" alt="Image" class="Main__Image">
-        <h3 class="Main__Title">Titulo Noticia</h3>
+        <img src="Img noticias/biblioteca.jpg" alt="Image" class="Main__Image">
+        <h3 class="Main__Title">Biblioteca Sena</h3>
       </section>
       <section class="Main__Face Main__Back">
-        <h3 class="Main__Title--modif">Titulo Noticia</h3>
-        <p class="Main__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi neque asperiores aperiam? Ullam, at! Cumque quis numquam quibusdam amet consequuntur possimus corporis eos rem officia, est repellendus at! Sapiente!</p>
+        <h3 class="Main__Title--modif">Biblioteca Sena</h3>
+        <p class="Main__Text">
+          ¡Explorar la biblioteca del SENA es como abrir un cofre lleno de tesoros educativos! En sus estantes encontrarás conocimiento, inspiración y oportunidades para crecer. ¡No dudes en sumergirte en sus recursos y enriquecer tu mente! Tu viaje de aprendizaje está a solo unas páginas de distancia. ¡Adelante, descubre lo que la biblioteca del SENA tiene para ofrecer y prepárate para un mundo de conocimiento!
+        </p>
         <div class="Main__Link">
-          <a href="#">Details</a>
-        </div>
-      </section>
-    </article>
-
-    <article class="Main__Card">
-      <section class="Main__Face Main__Front">
-        <img src="IMG prueba.png" alt="Image" class="Main__Image">
-        <h3 class="Main__Title">Titulo Noticia</h3>
-      </section>
-      <section class="Main__Face Main__Back">
-        <h3 class="Main__Title--modif">Titulo Noticia</h3>
-        <p class="Main__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi neque asperiores aperiam? Ullam, at! Cumque quis numquam quibusdam amet consequuntur possimus corporis eos rem officia, est repellendus at! Sapiente!</p>
-        <div class="Main__Link">
-          <a href="#">Details</a>
+          <a href="https://biblioteca.sena.edu.co/">Ver mas</a>
         </div>
       </section>
     </article>
 
     <article class="Main__Card">
       <section class="Main__Face Main__Front">
-        <img src="IMG prueba.png" alt="Image" class="Main__Image">
-        <h3 class="Main__Title">Titulo Noticia</h3>
+        <img src="Img noticias/Logo sena 2.png" alt="Image" class="Main__Image">
+        <h3 class="Main__Title">PQRS Sena</h3>
       </section>
       <section class="Main__Face Main__Back">
-        <h3 class="Main__Title--modif">Titulo Noticia</h3>
-        <p class="Main__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi neque asperiores aperiam? Ullam, at! Cumque quis numquam quibusdam amet consequuntur possimus corporis eos rem officia, est repellendus at! Sapiente!</p>
+        <h3 class="Main__Title--modif">PQRS Sena</h3>
+        <p class="Main__Text">
+          Explorar el PQRS del SENA es una puerta abierta a la mejora constante. Tu voz y opiniones son fundamentales para enriquecer nuestra institución. ¡No dudes en participar y ser parte del cambio positivo! Juntos, podemos construir un SENA mejor. ¡Tus aportes hacen la diferencia!
+        </p>
         <div class="Main__Link">
-          <a href="#">Details</a>
+          <a href="https://sciudadanos.sena.edu.co/SolicitudIndex.aspx">Ver mas</a>
         </div>
       </section>
     </article>
 
     <article class="Main__Card">
       <section class="Main__Face Main__Front">
-        <img src="IMG prueba.png" alt="Image" class="Main__Image">
-        <h3 class="Main__Title">Titulo Noticia</h3>
+        <img src="Img noticias/CARRERAS UNIVERSITARIAS - milagroszuley18_over-blog.com" alt="Image" class="Main__Image">
+        <h3 class="Main__Title">Carreras presenciales tituladas</h3>
       </section>
       <section class="Main__Face Main__Back">
-        <h3 class="Main__Title--modif">Titulo Noticia</h3>
-        <p class="Main__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi neque asperiores aperiam? Ullam, at! Cumque quis numquam quibusdam amet consequuntur possimus corporis eos rem officia, est repellendus at! Sapiente!</p>
+        <h3 class="Main__Title--modif">Carreras presenciales tituladas</h3>
+        <p class="Main__Text">
+          Las carreras ofrecidas por el SENA son como senderos que te llevan hacia tus metas y aspiraciones. Cada una de ellas abre puertas hacia un futuro lleno de oportunidades. Explora y encuentra la carrera que realmente te apasione, y prepárate para un viaje educativo emocionante. Tu elección puede abrir un mundo de posibilidades ante ti. Así que, no dudes en comenzar tu emocionante viaje académico en el SENA. ¡Te espera un futuro brillante!
+        </p>
         <div class="Main__Link">
-          <a href="#">Details</a>
+          <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion200&amp;buscador_texto=Ej%3A+Cocina%2C+Contabilidad&amp;ofertaDisponible=on&amp;ffv=-1&amp;amp;ciudad=Ej%3A+Cali%2C+Cartagena&amp;campoEmpresa=&amp;amp;nfct=-1#fix-opcion200">Ver mas</a>
         </div>
       </section>
     </article>
 
     <article class="Main__Card">
       <section class="Main__Face Main__Front">
-        <img src="IMG prueba.png" alt="Image" class="Main__Image">
-        <h3 class="Main__Title">Titulo Noticia</h3>
+        <img src="Img noticias/Carreras virtuales.jpg" alt="Image" class="Main__Image">
+        <h3 class="Main__Title">Carreras virtuales tituladas</h3>
       </section>
       <section class="Main__Face Main__Back">
-        <h3 class="Main__Title--modif">Titulo Noticia</h3>
-        <p class="Main__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi neque asperiores aperiam? Ullam, at! Cumque quis numquam quibusdam amet consequuntur possimus corporis eos rem officia, est repellendus at! Sapiente!</p>
+        <h3 class="Main__Title--modif">Carreras virtuales tituladas</h3>
+        <p class="Main__Text">
+          Las carreras del SENA son como caminos hacia tus sueños. Cada una ofrece oportunidades emocionantes y perspectivas de futuro. ¡Explora y descubre la carrera que te apasiona, y prepárate para un viaje de aprendizaje inolvidable! Tu elección puede llevarte a un mundo de posibilidades. ¡Adelante, inicia tu emocionante viaje académico en el SENA!
+        </p>
         <div class="Main__Link">
-          <a href="#">Details</a>
+          <a href="https://portal.senasofiaplus.edu.co/index.php/component/content/article/2-uncategorised/638-programas-de-formacion-tecnica-virtual">Ver mas</a>
+        </div>
+      </section>
+    </article>
+
+    <article class="Main__Card">
+      <section class="Main__Face Main__Front">
+        <img src="Img noticias/Diseño de cursos en línea_ _ Vector Premium.jpg" alt="Image" class="Main__Image">
+        <h3 class="Main__Title">Cursos cortos, formacion complementaria presencial</h3>
+      </section>
+      <section class="Main__Face Main__Back">
+        <h3 class="Main__Title--modif">Cursos cortos, formacion complementaria presencial</h3>
+        <p class="Main__Text">
+          Los cursos cortos presenciales del SENA son como ventanas de oportunidad que se abren frente a ti. En ellos, encontrarás un mundo de conocimiento y experiencia que te ayudará a crecer personal y profesionalmente. ¡No dudes en explorar estos cursos y dar un paso adelante en tu camino de aprendizaje! Tu futuro brillará aún más con cada nueva habilidad que adquieras. ¡Aprovecha esta oportunidad emocionante!
+        </p>
+        <div class="Main__Link">
+          <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion201&buscador_texto=Ej%3A+Cocina%2C+Contabilidad&ofertaDisponible=on&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1">Ver mas</a>
         </div>
       </section>
     </article>
   
     <article class="Main__Card">
       <section class="Main__Face Main__Front">
-        <img src="IMG prueba.png" alt="Image" class="Main__Image">
-        <h3 class="Main__Title">Titulo Noticia</h3>
+        <img src="Img noticias/Educación Y Estudios Universitarios Plana Png PNG , Educación, Plano, Pensando PNG y PSD para Descargar Gratis _ Pngtree.jpg" alt="Image" class="Main__Image">
+        <h3 class="Main__Title">Informacion de interes del aprendiz</h3>
       </section>
       <section class="Main__Face Main__Back">
-        <h3 class="Main__Title--modif">Titulo Noticia</h3>
-        <p class="Main__Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi neque asperiores aperiam? Ullam, at! Cumque quis numquam quibusdam amet consequuntur possimus corporis eos rem officia, est repellendus at! Sapiente!</p>
+        <h3 class="Main__Title--modif">Informacion de interes del aprendiz</h3>
+        <p class="Main__Text">
+          La información de interés del aprendiz es como un mapa que te guía hacia el éxito. En cada detalle, encontrarás valiosos consejos y recursos que te ayudarán en tu camino de aprendizaje. ¡No subestimes el poder de estar informado y preparado! Explora, aprende y aprovecha al máximo cada oportunidad que se presenta. Tu crecimiento y éxito dependen de ello. ¡Adelante, sé un aprendiz informado y triunfador!
+        </p>
         <div class="Main__Link">
-          <a href="#">Details</a>
+          <a href="https://ejecuciondelaformacion.sena.edu.co/comunidad-aprendices">Ver mas</a>
         </div>
       </section>
     </article>
