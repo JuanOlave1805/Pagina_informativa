@@ -155,12 +155,13 @@ body{
     display: inline-block;
     background: var(--main-bg-color-2);
     color: var(--main-bg-color-4);
-    padding: 8px;
-    border-radius: 10px;
+    /* padding: 8px; */
+    border-radius: 20px;
     justify-content: space-around;
     align-items: center;
     display: flex;
     transition: all 0.25s ease;
+    padding: 9px 25px;
 }
 .Header__Dropdown a{
     color: var(--main-bg-color-4);
