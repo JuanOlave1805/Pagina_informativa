@@ -160,31 +160,36 @@ body{
     justify-content: space-around;
     align-items: center;
     display: flex;
-    transition: all 0.25s ease;
     padding: 9px 25px;
 }
+.hea
 .Header__Dropdown a{
     color: var(--main-bg-color-4);
 }
 .Header__Dropdown a:hover{
     color: var(--main-bg-color-3);
+    border-radius: 10px;
 }
 
 .Header__Dropdown-Content {
     display: none;
     border-radius: 10px;
     position: absolute;
-    background-color: var(--main-bg-color-6);
-    min-width: 160px;
+    background-color: var(--main-bg-color-2);
+    min-width: auto;
     z-index: 1;
 }
-
+.Header__Dropdown:hover{
+  border-radius: 10px 10px 0px 0px;
+}
 .Header__Dropdown:hover .Header__Dropdown-Content {
     display: block;
     top: 100%;
+    width: auto;
+    transition: all 0.5s linear;
 }
 .Header__Dropdown-Content{
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .Header__Dropdown-Content a {
