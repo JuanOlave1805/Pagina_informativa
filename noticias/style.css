@@ -229,7 +229,7 @@ body{
 
 /* Main */
 .Main{
-    height: 3500px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -239,15 +239,18 @@ body{
 }
 .Main__Content{
     display: grid;
-    gap: 20px;
+    gap: 25px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     height: 90%;
     width: 90%;
+    margin: 20px;
 }
 .Main__Title-Primary{
     text-align: justify;
+    align-items: center;
+    display: flex;
     width: 90%;
-    height: 250px;
+    height: 120px;
     font-size: 50px;
     color: var(--main-bg-color-4);
     font: bold;
@@ -256,7 +259,7 @@ body{
 .Main__Card{
     flex-basis: 400px;
     position: relative;
-    height: 90%;
+    height: 500px;
     width: 100%;
     
 } 
@@ -265,7 +268,7 @@ body{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     transition: .5s;
     
@@ -384,9 +387,9 @@ body{
 
 /* Medias Querys */
 @media (max-width: 1800px){
-    .Main{
+    /* .Main{
         height: 5000px;
-    }
+    } */
 }
 @media (max-width: 1300px) {
     /* Main */
@@ -413,9 +416,9 @@ body{
     }
 
     /* Main */
-    .Main{
+    /* .Main{
         height: 5800px;
-    }
+    } */
 
     /* Footer */
 
@@ -430,9 +433,10 @@ body{
 }
 @media (max-width:800px){
     /* Main */
-    .Main{
+    /* .Main{
         height: 7200px;
-    }
+    } */
+
 }
 @media (max-width: 600px){
     
@@ -443,9 +447,9 @@ body{
     }
 
     /* Main */
-    .Main{
+    /* .Main{
         height: 500rem;
-    }
+    } */
     .Main__Title-Primary{
         font-size: 32px;
     }
