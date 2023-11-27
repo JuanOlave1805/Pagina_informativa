@@ -21,7 +21,7 @@ body{
 }
 
 header{
-    transition: ease 1s;
+    transition: ease 0.5s;
 }
 
 .Header{
@@ -58,12 +58,13 @@ header.abajo{
 }
 .Header__Box{
     display: flex;
+    transition: ease .5s;
     justify-content: space-evenly;
     /* background: rebeccapurple; */
     width: 100%;
 }
 .Header__Link{
-    transition: ease 1s;
+    /* transition: ease 1s; */
     display: none;
 }
 .Header__Link--edit{
