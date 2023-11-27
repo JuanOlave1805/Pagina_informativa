@@ -11,23 +11,26 @@
     --main-bg-color-5: #1b3039; /* Fondo header, fooler */
     --main-bg-color-6: #eceff1; /*Color letra header, foooler*/
     --main-bg-color-7: #9CCE88; 
+    --main-transparent: transparent;
 }
 
+@import url(/noticias/style.css );
 body{
     background-color: var(--main-bg-color-3);
     min-width: 400px;
 }
 
 .Header{
-    background-color:   var(--main-bg-color-5);
+    background-color:   var(--main-transparent);
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 85px;
-    padding: 5px 10%;
+    height: auto;
+    padding: 0px 10%;
 }
+
 
 .Header__Logo{
     cursor: pointer;
@@ -35,7 +38,7 @@ body{
 }
 
 .Header__Image{
-    height: 100px;
+    height: 120px;
     width: auto;
     transition: all 0.3s;
 }
@@ -43,7 +46,21 @@ body{
 .Header__Image:hover{
     transform: scale(1.2);
 }
+.Header__Box{
+    display: none;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s;
+}
 
+.Header__Box.abajo{
+    background: var(--main-bg-color-5);
+    display: block;
+    transition: all 0.3s;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
 .Header__Nav{
     list-style: none;
 }
@@ -146,7 +163,7 @@ body{
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    height: 850px;
+    height: 1000px;
 }
 .Main__Title{
     font-size: 60px;
@@ -161,6 +178,27 @@ body{
     font-style: normal;
     font-weight: 800;   
     line-height: normal;
+}
+.Main__Button{
+    height: 44px;
+    width: auto;
+    padding: 0px 24px 0px 24px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+.Main__Button a:hover{
+    color: var(--main-bg-color-6);
+}
+.Main__Button:hover{
+    cursor: pointer;
+    background:  var(--main-bg-color-5);
+    transform: scale(1.1);
+}
+.Main__Button a{
+    text-decoration: none;
+    color: var(--main-bg-color-5);
 }
 .Main__Image{
     width: 510px;
