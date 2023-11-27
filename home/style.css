@@ -20,6 +20,10 @@ body{
     min-width: 400px;
 }
 
+header{
+    transition: ease 1s;
+}
+
 .Header{
     background-color:   var(--main-transparent);
     display: flex;
@@ -29,6 +33,12 @@ body{
     width: 100%;
     height: auto;
     padding: 0px 10%;
+}
+header.abajo{
+    background: var(--main-bg-color-5);
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -47,20 +57,34 @@ body{
     transform: scale(1.2);
 }
 .Header__Box{
-    display: none;
-    width: 100%;
-    height: auto;
-    transition: all 0.3s;
-}
-
-.Header__Box.abajo{
-    background: var(--main-bg-color-5);
-    display: block;
-    transition: all 0.3s;
-    height: 100px;
     display: flex;
     justify-content: space-evenly;
+    /* background: rebeccapurple; */
+    width: 100%;
 }
+.Header__Link{
+    transition: ease 1s;
+    display: none;
+}
+.Header__Link--edit{
+    display: none;
+    transition: ease 1s;
+}
+
+.Header__Link.abajo{
+    display: block;
+    color: red;
+}
+.Header__Link--edit.abajo{
+    display: block;
+    color: red;
+}
+
+.Header__Link--edit .Header__Link{
+    transition: ease 1s;
+}
+
+
 .Header__Nav{
     list-style: none;
 }
