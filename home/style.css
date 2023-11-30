@@ -1,4 +1,3 @@
-@import url(noticias/style.css);
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,201 +6,147 @@
     font-size: 20px;
     --main-bg-color-1: black;
     --main-bg-color-2: white;
-    --main-bg-color-3:  #86e261; /*Fondo general*/
-    --main-bg-color-4: #21313f; /*Color letra titulo y texto*/
+    /* --main-bg-color-3:  #86e261; Fondo general */
+    --main-bg-color-3:  #D8D8D8; /*Fondo general*/
+    /* --main-bg-color-4: #21313f; Color letra titulo y texto */
+    --main-bg-color-4: #091602; /*Color letra titulo y texto*/
     --main-bg-color-5: #1b3039; /* Fondo header, fooler */
     --main-bg-color-6: #eceff1; /*Color letra header, foooler*/
     --main-bg-color-7: #9CCE88; 
+    --hover: #616b61;
     --main-transparent: transparent;
 }
 
-
-body{
-    background-color: var(--main-bg-color-3);
-    min-width: 400px;
+/* Html */
+html{
+    scroll-behavior: smooth;
 }
 
+/* Body */
+body{
+    background-color: var(--main-bg-color-3);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header encabezado */
 header{
     z-index: 1;
     transition: ease 0.5s;
 }
-
 .Header{
-    background-color:   var(--main-transparent);
+    background-color:var(--main-transparent);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: fixed;
     width: 100%;
+    /* background-color: red; */
+    /* max-width: 1900px; */
     height: auto;
     padding: 0px 10%;
 }
+
+/* Contenedor del header */
+.Header__Container{
+    /* max-width: 1900px; */
+    width: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+/* Estilos de la funcion de Javascript  */
 header.abajo{
-    background: var(--main-bg-color-5);
+    background: var(--main-bg-color-4);
+    /* width: 100%; */
     height: auto;
     display: flex;
     justify-content: space-evenly;
 }
-
-
-.Header__Logo{
-    cursor: pointer;
-    margin-right: 78%;
+.Header__Box.abajo{
+    background-color: var(--main-bg-color-4);
+    transition: ease .5s;
+    width: 100%;
+} 
+#HeaderLink.abajo{
+    display: block;
+    color: var(--main-bg-color-3);
+    transition: ease 0.5s;
 }
 
+/* Logo */
+.Header__Logo{
+    cursor: pointer;
+    /* background-color: red; */
+}
 .Header__Image{
     height: 100px;
     width: auto;
     transition: all 0.3s;
 }
-
 .Header__Image:hover{
     transform: scale(1.2);
+    cursor: pointer;
 }
+
+/* Contenedor de los links de las Secciones 2 y 3 */
 .Header__Box{
     display: flex;
     /* transition: ease 0.5s; */
     justify-content: space-evenly;
     /* background: rebeccapurple; */
     width: 100%;
+    transition: ease .5s;
 }
 
+/* Links de las Secciones 2 y 3 */
 .Header__Link--edit, .Header__Link{
     display: none;
     transition: ease 0.5s;
     font-size: 28px;
-}
-
-#HeaderLink--edit.abajo{
-    display: block;
-    color: red;
-    transition: ease 0.5s;
-}
-#HeaderLink.abajo{
-    display: block;
-    color: red;
-    transition: ease 0.5s;
-}
-
-.Header__Nav{
-    list-style: none;
-}
-
-.Header__Links{
-    display: inline-block;
-    padding: 0 20px;    
-}
-
-.Header__Links:hover,
-.Header__Mobile a:hover{
-    transform: scale(1.1);
-}
-
-.Header__Links a{
-    font-size: 20px;
-    color: var(--main-bg-color-6); 
-}
-
-.Header__Links a:hover{
-    color: var(--main-bg-color-7);
-}
-
-.Header__Menu {
-    display:none;
-}
-
-.Header__Button button,
-.Header__Menu button{
-    margin-left: 20px;
-    font-weight: 20px;
-    color: var(--main-bg-color-5);
-    padding: 9px 25px;
-    background: var(--main-bg-color-6);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.Header__Button button:hover,
-.Header__Menu button:hover{
-    background-color: var(--main-bg-color-6);
-    color: var(--main-bg-color-7);
-    transform: scale(1.1);
+    text-decoration: none;
 }
 
 
-/*Nav Mobile*/
 
-.Header a{
-    text-decoration: none;  
-}
 
-.Header__Mobile{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: var(--main-bg-color-4);
-    overflow: hidden;
-    transition: all 0.3s ease 0s;
-}
-
-.Header__Mobile .Header__Content{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
-}
-
-.Header__Mobile a{
-    padding: 15px;
-    font-size: 36px;
-    display: block;
-    transition: all 0.3s ease 0s;
-    font-weight: 700;
-    color: var(--main-bg-color-6);
-}
-
-.Header__Mobile a:hover, 
-.Header__Mobile a:focus{
-    color: var(--main-bg-color-6);
-}
-
-.Header .Header__Mobile .Header__Close{
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 65px;
-}
 
 /* Main */
 
-.Main{
+/* Seccion 1 */
+main{
+    border-bottom: solid 1px var(--main-bg-color-5);
+}
+.main__Sec-1{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    height: 1000px;
+    height: 1080px;
+    width: 100%;
 }
-.Main__Title--edit{
+
+/* Titulo principal de la Seccion */
+.Main__Title_Sec-1{
     font-size: 60px;
     font-style: normal;
     font-weight: 800;
     color: var(--main-bg-color-4);
 }
-.Main__Text{
+
+/* Texto de Seccion 1 */
+.Main__Text_Sec-1{
     color: var(--main-bg-color-4);
     font-family: Inter;
-    font-size: 30px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;   
     line-height: normal;
 }
-.Main__Button{
+
+/* Boton de la Seccion 1 */
+.Main__Button_Sec-1{
     height: 44px;
     width: auto;
     padding: 0px 24px 0px 24px;
@@ -209,51 +154,79 @@ header.abajo{
     border: none;
     margin-top: 20px;
     transition: all 0.3s;
+    background-color: var(--main-bg-color-4);
+    color: var(--main-bg-color-4);
 }
-.Main__Button a:hover{
-    color: var(--main-bg-color-6);
+.Main__Button_Sec-1 a{
+    height: 100%;
+    /* background: red; */
+    width: 100%;
+    text-decoration: none;
+    color: var(--main-bg-color-3);
 }
-.Main__Button:hover{
+.Main__Button_Sec-1:hover{
     cursor: pointer;
-    background:  var(--main-bg-color-5);
+    background:  var(--hover);
+    color: var(--main-bg-color-4);
     transform: scale(1.1);
 }
-.Main__Button a{
-    text-decoration: none;
-    color: var(--main-bg-color-5);
-}
-.Main__Image--edit{
+
+/* Imagen de la Seccion 1 */
+.Main__Image_Sec-1{
     width: 510px;
     height: 390px;
 }
-.Noticia{
+
+
+
+/* Seccion 2 */
+.main__Sec-2{
     height: auto;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;*/
+    align-items: center; 
     flex-direction: column;
-    padding-top:100px ;
+    /* padding-top:100px; */
+    padding: 0px 0px 100px 0px;
+    margin-right: 80px;
+    margin-left: 80px;
+    /* max-width: 1900px; */
+    /* background-color: rebeccapurple; */
+    /* margin-bottom: 100px; */
 }
+
+/* Clase del contenedor dentro de la seccion 2 */
 .Main__Content{
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    height: 90%;
-    width: 90%;
-    margin: 20px;
+    max-width: 1900px;
+    /* width: 100%; */
+    /* height: 90%; */
+    padding: 0px 80px;
+    background: red;
+    /* width: 100%; */
+    /* margin: 20px; */
 }
+
+/* Titulo principal de la Seccion */
 .Main__Title-Primary{
-    text-align: justify;
-    align-items: center;
+    /* text-align: start; */
+    /* align-items: center; */
     display: flex;
-    width: 90%;
-    height: 120px;
-    font-size: 50px;
+    justify-content: center;    
+    max-width: 1900px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 120px;
+    /* background-color: red; */
+    font-size: 60px;
     color: var(--main-bg-color-4);
     font: bold;
 }
 
+/* Card */
 .Main__Card{
     flex-basis: 400px;
     position: relative;
@@ -261,6 +234,7 @@ header.abajo{
     width: 100%;
     
 } 
+/* Frontal */
 .Main__Face{
     position: absolute;
     width: 100%;
@@ -295,6 +269,7 @@ header.abajo{
     background: var(--main-bg-color-6);
     border-radius: 10px;
 }
+/* Trasera */
 .Main__Back{
     transform:perspective(600px) rotateY(180deg);
     padding: 5px;
@@ -324,7 +299,6 @@ header.abajo{
     text-decoration:dotted;  
     font-size: 20px;
 }
-
 .Main__Text{
     letter-spacing: 1px;
     font-size: 16px;
@@ -332,6 +306,8 @@ header.abajo{
     margin: 10px;
 
 }
+
+/* Giro de las cards */
 .Main__Card:hover .Main__Front{
     transform: perspective(600pc) rotateY(180deg);
 }
@@ -339,33 +315,118 @@ header.abajo{
     transform: perspective(600px) rotateY(360deg);
 } 
 
+/* Clase de los links en la pagina de la Seccion 2 y 3 */
+.links{
+    height: 140px;
+    /* background: red; */
+    width: 100%;
+}
 
+
+.main__Sec-3{
+    background-color: red;
+    display: grid;
+    width: 100%;
+    height:900px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+}
+.Main__Formulary{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Main__Formulary div {
+    width: auto;
+}
+.Main__Title{
+    font-size: 60px;
+    display: flex;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    width: 600px;
+    text-align: start;
+}
+.Main__Text{
+    margin-bottom: 20px;
+    width: 600px;
+}
+.Main__Format{
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+    flex-direction: column;
+    border: solid var(--main-bg-color-1) 1px;
+    border-radius: 2px;
+    height: 40px;
+}
+.Main__Format--Text{
+    width: 600px;
+    height: 100px;
+    border: solid var(--main-bg-color-1) 1px;
+    border-radius: 2px;
+}
+.Main__Botton{
+    width: 130px;
+    background: var(--main-bg-color-5);
+    color: var(--main-bg-color-6);
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;;
+}
+.Main__Botton:hover{
+    text-align: center;
+    background: var(--main-bg-color-6);
+    color: var(--main-bg-color-5);
+    transform: scale(1.1)
+}
+.Main__Box{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Main__Image{
+    height: 550px;    
+}
 
 
 /* Footer */
 
 .Footer{
     display: flex;
-    height: 280px;
+    /* max-width: 1900px; */
+    height: 1080px;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
     background: var(--main-bg-color-5);
     color: var(--main-bg-color-6);
 }
+
+/* Caja dentro del footer donde aplico el max width */
 .Footer__Box{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 200px;
+    max-width: 1900px;
 }
+
+/* Links en el footer */
 .Footer__Box li a{
     text-decoration: none;
     color: var(--main-bg-color-6);
 }
+/* Clase de el apartado email */
 .Footer__Email{
     text-decoration: none;
     color: var(--main-bg-color-6);
 }
+/* Iconos */
 .Footer__Icons{
     list-style: none;    
 }
@@ -376,6 +437,8 @@ header.abajo{
     padding: 4px;
     margin-right: 5px;
 }
+
+/* Links */
 .Footer__Shortcuts{
     text-decoration: none;
     color: var(--main-bg-color-6);
@@ -388,6 +451,28 @@ header.abajo{
 
 
 /* Medias Querys */
+@media (max-width: 1500px) {
+    header{
+        width: 100%;
+        background: rebeccapurple;
+    }
+    .Header__Container{
+        background-color: red;
+        width: 100%;
+    }
+
+    .Main__Title-Primary{
+        margin-bottom: 40px;
+    }
+    .Main__Content{
+        margin-left: 80px;
+        margin-right: 80px;
+        width: 100%;
+        background-color: rebeccapurple;
+    }
+    
+}
+
 @media (max-width: 1300px) {
     
     /* Main */
@@ -396,9 +481,6 @@ header.abajo{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-    }
-    .Main__Box{
-        width: 48%;
     }
     .Main__Title{
         font-size: 50px;
@@ -417,7 +499,7 @@ header.abajo{
 
     .Footer{
         display: flex;
-        height: 200px;
+        /* height: 200px; */
         justify-content: space-around;
     }
 }

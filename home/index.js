@@ -11,6 +11,10 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("abajo",window.scrollY>0);
   })
 window.addEventListener("scroll", function(){
+    var header = document.querySelector(".Header__Box");
+    header.classList.toggle("abajo",window.scrollY>0);
+  })
+window.addEventListener("scroll", function(){
     var header = document.querySelector(".Header__Link");
     header.classList.toggle("abajo",window.scrollY>0);
   })
