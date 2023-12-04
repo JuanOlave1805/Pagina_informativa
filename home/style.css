@@ -34,74 +34,71 @@ body{
 /* Header encabezado */
 header{
     z-index: 1;
-    transition: ease 0.5s;
+    transition: ease .5s;
 }
-.Header{
+.abajo{
+    transition: ease .5s;
+}
+.header{
     background-color:var(--main-transparent);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: fixed;
     width: 100%;
-    /* background-color: red; */
-    /* max-width: 1900px; */
     height: auto;
     padding: 0px 10%;
 }
 
 /* Contenedor del header */
-.Header__Container{
-    /* max-width: 1900px; */
+.header__Container{
+    max-width: 1900px;
     width: 100%;
-    /* background-color: rebeccapurple; */
 }
 
 /* Estilos de la funcion de Javascript  */
 header.abajo{
     background: var(--main-bg-color-4);
-    /* width: 100%; */
     height: auto;
     display: flex;
+    transition: ease .5s;
     justify-content: space-evenly;
 }
-.Header__Box.abajo{
+.header__Box.abajo{
     background-color: var(--main-bg-color-4);
     transition: ease .5s;
     width: 100%;
 } 
-#HeaderLink.abajo{
-    display: block;
+#headerLink.abajo{
     color: var(--main-bg-color-3);
-    transition: ease 0.5s;
+    transition: ease .5s;
+    display: block;
 }
 
 /* Logo */
-.Header__Logo{
+.header__Logo{
     cursor: pointer;
-    /* background-color: red; */
 }
-.Header__Image{
+.header__Image{
     height: 100px;
     width: auto;
     transition: all 0.3s;
 }
-.Header__Image:hover{
+.header__Image:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
 
 /* Contenedor de los links de las Secciones 2 y 3 */
-.Header__Box{
+.header__Box{
     display: flex;
-    /* transition: ease 0.5s; */
     justify-content: space-evenly;
-    /* background: rebeccapurple; */
     width: 100%;
     transition: ease .5s;
 }
 
 /* Links de las Secciones 2 y 3 */
-.Header__Link--edit, .Header__Link{
+.header__Link--edit, .header__Link{
     display: none;
     transition: ease 0.5s;
     font-size: 28px;
@@ -118,17 +115,18 @@ header.abajo{
 main{
     border-bottom: solid 1px var(--main-bg-color-5);
 }
-.main__Sec-1{
+.seccion_1{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     height: 1080px;
     width: 100%;
+    max-width: 1900px;
 }
 
 /* Titulo principal de la Seccion */
-.Main__Title_Sec-1{
+.seccion_1__Title{
     font-size: 60px;
     font-style: normal;
     font-weight: 800;
@@ -136,7 +134,7 @@ main{
 }
 
 /* Texto de Seccion 1 */
-.Main__Text_Sec-1{
+.seccion_1__Text{
     color: var(--main-bg-color-4);
     font-family: Inter;
     font-size: 24px;
@@ -146,7 +144,7 @@ main{
 }
 
 /* Boton de la Seccion 1 */
-.Main__Button_Sec-1{
+.seccion_1__Button{
     height: 44px;
     width: auto;
     padding: 0px 24px 0px 24px;
@@ -156,15 +154,15 @@ main{
     transition: all 0.3s;
     background-color: var(--main-bg-color-4);
     color: var(--main-bg-color-4);
+    transition: ease .5s;
 }
-.Main__Button_Sec-1 a{
+.seccion_1__Button a{
     height: 100%;
-    /* background: red; */
     width: 100%;
     text-decoration: none;
     color: var(--main-bg-color-3);
 }
-.Main__Button_Sec-1:hover{
+.seccion_1__Button:hover{
     cursor: pointer;
     background:  var(--hover);
     color: var(--main-bg-color-4);
@@ -172,7 +170,7 @@ main{
 }
 
 /* Imagen de la Seccion 1 */
-.Main__Image_Sec-1{
+.seccion_1__Image{
     width: 510px;
     height: 390px;
 }
@@ -180,62 +178,49 @@ main{
 
 
 /* Seccion 2 */
-.main__Sec-2{
+.seccion_2{
     height: auto;
     width: 100%;
     display: flex;
-    /* justify-content: center;*/
     align-items: center; 
     flex-direction: column;
-    /* padding-top:100px; */
     padding: 0px 0px 100px 0px;
-    margin-right: 80px;
-    margin-left: 80px;
-    /* max-width: 1900px; */
-    /* background-color: rebeccapurple; */
-    /* margin-bottom: 100px; */
+    max-width: 1900px;
 }
 
 /* Clase del contenedor dentro de la seccion 2 */
-.Main__Content{
+.seccion_2__Content{
     display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    max-width: 1900px;
-    /* width: 100%; */
-    /* height: 90%; */
+    gap: 50px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 0px 80px;
-    background: red;
-    /* width: 100%; */
-    /* margin: 20px; */
 }
 
 /* Titulo principal de la Seccion */
-.Main__Title-Primary{
-    /* text-align: start; */
-    /* align-items: center; */
+.seccion_2__Title-Primary{
     display: flex;
     justify-content: center;    
     max-width: 1900px;
     height: auto;
     width: 100%;
     margin-bottom: 120px;
-    /* background-color: red; */
     font-size: 60px;
     color: var(--main-bg-color-4);
     font: bold;
 }
 
 /* Card */
-.Main__Card{
+.card{
     flex-basis: 400px;
     position: relative;
     height: 500px;
     width: 100%;
+    cursor: pointer;
     
 } 
 /* Frontal */
-.Main__Face{
+.card__Face{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -245,17 +230,17 @@ main{
     transition: .5s;
     
 }
-.Main__Front{
+.card__Front{
     transform: perspective(600px) rotate(0deg);
     box-shadow: 0 5px 10px black;
 }
-.Main__Image{
+.card__Image{
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.Main__Title{
+.card__Title{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,7 +255,7 @@ main{
     border-radius: 10px;
 }
 /* Trasera */
-.Main__Back{
+.card__Back{
     transform:perspective(600px) rotateY(180deg);
     padding: 5px;
     color: var(--main-bg-color-4);
@@ -281,7 +266,7 @@ main{
     text-align: center;
     box-shadow: 0 5px 10px black;
 }
-.Main__Title--modif{
+.card__Title--modif{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -289,58 +274,68 @@ main{
     font-size: 24px;
     color: var(--main-bg-color-4);
 }
-.Main__Link{
+.card__Link{
     border-top: solid 1px var(--main-bg-color-4);
     height: 50px;
     line-height: 50px;
 }
-.Main__Link a{
+.card__Link a{
     color: var(--main-bg-color-4);
     text-decoration:dotted;  
     font-size: 20px;
 }
-.Main__Text{
+.card__Text{
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
     margin: 10px;
 
 }
 
 /* Giro de las cards */
-.Main__Card:hover .Main__Front{
-    transform: perspective(600pc) rotateY(180deg);
-}
-.Main__Card:hover .Main__Back{
+.card.flipped .card__Front {
+    transform: perspective(600px) rotateY(180deg);
+    cursor: pointer;
+  }
+  
+  .card.flipped .card__Back {
     transform: perspective(600px) rotateY(360deg);
-} 
+  }
+  
+
 
 /* Clase de los links en la pagina de la Seccion 2 y 3 */
 .links{
     height: 140px;
-    /* background: red; */
     width: 100%;
 }
 
-
-.main__Sec-3{
-    background-color: red;
+/* Seccion 3  Formulario */
+.seccion_3{
+    padding: 0px 80px;
+    max-width: 1900px;
     display: grid;
+    gap: 10px;
     width: 100%;
-    height:900px;
+    height:600px;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
 }
-.Main__Formulary{
+.seccion_3__Formulary{
     align-items: center;
     display:flex;
     flex-direction: column;
     justify-content: center;
 }
-.Main__Formulary div {
+
+#contact{
+    transition: ease .5s;
+}
+
+.seccion_3__Formulary div {
     width: auto;
 }
-.Main__Title{
+.seccion_3__Title{
     font-size: 60px;
     display: flex;
     margin-bottom: 20px;
@@ -348,26 +343,24 @@ main{
     width: 600px;
     text-align: start;
 }
-.Main__Text{
+.seccion_3__Text{
     margin-bottom: 20px;
     width: 600px;
 }
-.Main__Format{
+.seccion_3__Format{
     display: flex;
-    width: 600px;
     justify-content: space-around;
     flex-direction: column;
     border: solid var(--main-bg-color-1) 1px;
     border-radius: 2px;
     height: 40px;
 }
-.Main__Format--Text{
-    width: 600px;
+.seccion_3__Format--Text{
     height: 100px;
     border: solid var(--main-bg-color-1) 1px;
     border-radius: 2px;
 }
-.Main__Botton{
+.seccion_3__Botton{
     width: 130px;
     background: var(--main-bg-color-5);
     color: var(--main-bg-color-6);
@@ -377,60 +370,62 @@ main{
     cursor: pointer;
     transition: all 0.3s ease 0s;;
 }
-.Main__Botton:hover{
+.seccion_3__Botton:hover{
     text-align: center;
     background: var(--main-bg-color-6);
     color: var(--main-bg-color-5);
     transform: scale(1.1)
 }
-.Main__Box{
+.seccion_3__Box{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Main__Image{
+.seccion_3__Image{
+    display: flex;
+    justify-content: center;
     height: 550px;    
 }
 
 
 /* Footer */
 
-.Footer{
+.footer{
     display: flex;
-    /* max-width: 1900px; */
-    height: 1080px;
+    height: 250px;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    background: var(--main-bg-color-5);
     color: var(--main-bg-color-6);
 }
 
 /* Caja dentro del footer donde aplico el max width */
-.Footer__Box{
+.footer__Box{
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
     justify-content: space-evenly;
-    height: 200px;
+    width: 100%;
     max-width: 1900px;
 }
-
+.footer__Box li {
+    list-style: none;
+}
 /* Links en el footer */
-.Footer__Box li a{
+.footer__Box li a{
     text-decoration: none;
     color: var(--main-bg-color-6);
 }
 /* Clase de el apartado email */
-.Footer__Email{
+.footer__Email{
     text-decoration: none;
     color: var(--main-bg-color-6);
 }
 /* Iconos */
-.Footer__Icons{
+.footer__Icons{
     list-style: none;    
 }
-.Footer__Icons a{
+.footer__Icons a{
     text-decoration: none;
     color:var(--main-bg-color-6) ;
     border-radius: 100%;
@@ -439,7 +434,7 @@ main{
 }
 
 /* Links */
-.Footer__Shortcuts{
+.footer__Shortcuts{
     text-decoration: none;
     color: var(--main-bg-color-6);
 }
@@ -452,160 +447,298 @@ main{
 
 /* Medias Querys */
 @media (max-width: 1500px) {
-    header{
-        width: 100%;
-        background: rebeccapurple;
+    
+    /* Seccion 1 */
+    .seccion_1{
+        height: 750px;
     }
-    .Header__Container{
-        background-color: red;
-        width: 100%;
-    }
-
-    .Main__Title-Primary{
-        margin-bottom: 40px;
-    }
-    .Main__Content{
-        margin-left: 80px;
-        margin-right: 80px;
-        width: 100%;
-        background-color: rebeccapurple;
+    /* Seccion 3 */
+    .seccion_3__Image{
+        width: 90%;
+        height: auto;
     }
     
 }
 
 @media (max-width: 1300px) {
     
-    /* Main */
-
-    .Main{
+    /* Seccion 1 */
+    .seccion_1{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        height: 820px;
     }
-    .Main__Title{
+    .seccion_1__Title{
         font-size: 50px;
         font-weight: 800;
     }
-    .Main__Text{
+    .seccion_1__Text{
         font-size: 25px;
         font-weight: 800;
     }
-    .Main__Image{
+    .seccion_1__Image{
         width: 45%;
         height: auto;
     }
 
+    /* Seccion 3 */
+    .seccion_3{
+        display: flex;
+        margin: 0px 32px 0px 32px ;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .seccion_3__Formulary{
+        justify-content: center;
+        width: 500px;
+    }
+    .seccion_3__Title{
+        font-size: 40px;
+        width: 100%;
+    }
+    .seccion_3__Text{
+        width: 100%;    
+        font-size: 20px;
+    }
+    .seccion_3__Format{
+        width: 100%;
+    }
+    .seccion_3__Format--Text{
+        width: 500px;
+    }
+    .seccion_3__Box{
+        height: 500px;
+    }
+    .seccion_3__Image{
+        height: 320px;   
+        width: auto; 
+    }
+
     /* Footer */
 
-    .Footer{
+    .footer{
         display: flex;
-        /* height: 200px; */
         justify-content: space-around;
     }
 }
 @media (max-width: 920px){
-    
-    /* Header */
-    
-    .Header__Nav, .Header__Button {
-        display: none;
-    }
-    .Header__Menu {
-        display: inherit;
-    }
-
-    /* Main */
-
-    .Main{
+    /* Seccion 1 */
+    .seccion_1{
+        height: 650px;
+        margin: 0px 32px 0px 32px ;
         display: flex;
         justify-content: center;
     }
-    .Main__Image{
+    .seccion_1__Image{
         height: auto;
         width: 48%;
     }
-    .Main__Title{
+    .seccion_1__Title{
         font-size: 40px;
     }
-    .Main__Text{
+    .seccion_1__Text{
         font-size: 20px;
+    }
+    /* Seccion 2 */
+    .seccion_1__Box{
+        margin: 0px 32px 0px 32px ;
+    }
+
+    /* Seccion 3 */
+    .seccion_3{
+        height: auto;
+    }
+    .seccion_3__Formulary{
+        width: 50%;
+    }
+    .seccion_3__Title{
+        font-size: 30px;
+    }
+    .seccion_3__Format, .seccion_3__Format--Text{
+        width: 100%;
+    }
+    .seccion_3__Image{
+        width: 80%;
+        height: auto;
+    }
+
+    .seccion_3__Box{
+        height: 510px;
+    }
+    .seccion_3__Title{
+        display: flex;
+        margin-left: 20%;
+    }
+    .seccion_3__Text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     /* Footer */
 
-    .Footer{
+    .footer{
         display: flex;
         justify-content: space-around;
         font-size: 15px;
     }
-    .Footer__Box li a {
+    .footer__Box li a {
 	font-size: 15px
     }
 }
-@media (max-width: 600px){
+@media (max-width: 700px){
+    /* Seccion 3 */
+    .seccion_3__Formulary{
+        width: 250px;
+    }
+    .seccion_3__Title{
+        font-size: 25px;
+    }
+    .seccion_3__Text{
+        font-size: 20px;
+        width: 100%;
+    }
+    .seccion_3__Format{
+        width: 250px;
+    }
+    .seccion_3__Format--Text{
+        width: 100%;
+    }
+    
+    .seccion_3__Image{
+        height: 300px;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width: 620px){
     
     /* Header */
-    .Header__Image{
-        height: 70px;
-        width: auto;
+    .header__Image{
+        height: auto;
+        width: 50%;
     }
 
-    /* Main */
-    .Main{
+    /* Seccion 1 */
+    .seccion_1{
         height: 700px;
     }
-    .Main__Image{
+    .seccion_1__Image{
         height: auto;
         width: 40%;
     }
 
-    .Main__Title{
-        font-size: 25px;
+    .seccion_1__Title{
+        font-size: 24px;
     }
-    .Main__Text{
-        font-size: 15px;
+    .seccion_1__Text{
+        font-size: 16px;
+    }
+    .seccion_1__Button a{
+        font-size: 16px;
     }
 
+    /* Seccion 3 */
+    .seccion_3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        height: 1000px;
+    }
+    .seccion_3__Formulary{
+        font-size: 20px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        order: 2;
+    }
+    .seccion_3__Formulary form{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .seccion_3__Format{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .seccion_3__Format{
+        .__Box{
+        display: flex;
+        width: 50%;
+        height: auto;
+        order: 1;
+    }
+    .seccion_3__Image{
+        width: 100%;
+        height: auto
+    }
+    .seccion_3__Title{
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .seccion_3__Text{
+        font-size: 20px;
+        width: 80%;
+        text-align: justify;
+        display: flex;
+        justify-self: center;
+    }
+    .seccion_3__Format{
+        width: 100%;
+    }
+    .seccion_3__Format--Text{
+        width: 100%;
+    }
+}
+
     /* Footer */
-    .Footer{
+    .footer{
         font-size: 12px;
         display: flex;
         justify-content: space-evenly;
     }
-    .Footer__Box li, .Footer__Shortcuts, .Footer__Box h3{
+    .footer__Box li, .footer__Shortcuts, .footer__Box h3{
         font-size: 14px;
     }
-    .Footer__Box li a{
+    .footer__Box li a{
 	font-size: 12px;
-    }
-}
-@media screen and (max-height:450px) {
-    .Header__Mobile .Header a{
-        font-size: 20px;
-    }
-    .Header .Header__Close .Header__Close{
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
     }
 }
 
 @media (max-width: 400px){
-    /* Header */
-    .Header__Image{
-        height: 70px;
-        width: auto;
+    /* Seccion 1 */
+    .seccion_1{
+        height: 450px;
     }
-
-    /* Main */
-
-    .Main__Box{
+    .seccion_1__Box{
         width: 48%;
     }
-    .Main__Title{
+    .seccion_1__Title{
         font-size: 20px;
     }
-    .Main__Text{
+    .seccion_1__Text{
         font-size: 12px;
-    } 
+    }
+    
+    /* Seccion 3 */
+    .seccion_3__Title{
+        font-size: 20px;
+    }
+    .seccion_3__Text{
+        font-size: 15px;
+        width: 100%;
+    }
+    .seccion_3__Image{
+        height: auto;
+        width: 90%;
+        left: 20px;
+    }
 }
