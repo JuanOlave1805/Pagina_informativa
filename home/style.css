@@ -43,7 +43,7 @@ header{
     background-color:var(--main-transparent);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     position: fixed;
     width: 100%;
     height: auto;
@@ -54,6 +54,9 @@ header{
 .header__Container{
     max-width: 1900px;
     width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
 }
 
 /* Estilos de la funcion de Javascript  */
@@ -67,7 +70,7 @@ header.abajo{
 .header__Box.abajo{
     background-color: var(--main-bg-color-4);
     transition: ease .5s;
-    width: 100%;
+    /* width: 100%; */
 } 
 #headerLink.abajo{
     color: var(--main-bg-color-3);
@@ -77,10 +80,14 @@ header.abajo{
 
 /* Logo */
 .header__Logo{
+  background-color: rebeccapurple;
     cursor: pointer;
 }
 .header__Image{
+  /* background-color: rebeccapurple; */
     height: 100px;
+    width: 100px;
+    object-fit: contain;
     width: auto;
     transition: all 0.3s;
 }
@@ -347,6 +354,9 @@ main{
     margin-bottom: 20px;
     width: 600px;
 }
+.seccion_3__Formulary form{
+  width: 70%;
+}
 .seccion_3__Format{
     display: flex;
     justify-content: space-around;
@@ -354,11 +364,13 @@ main{
     border: solid var(--main-bg-color-1) 1px;
     border-radius: 2px;
     height: 40px;
+    width: 100%;
 }
 .seccion_3__Format--Text{
     height: 100px;
     border: solid var(--main-bg-color-1) 1px;
     border-radius: 2px;
+    width: 100%;
 }
 .seccion_3__Botton{
     width: 130px;
@@ -453,6 +465,9 @@ main{
         height: 750px;
     }
     /* Seccion 3 */
+    .seccion_3__Formulary form{
+      width: 100%;
+    }
     .seccion_3__Image{
         width: 90%;
         height: auto;
@@ -616,9 +631,8 @@ main{
 @media (max-width: 620px){
     
     /* Header */
-    .header__Image{
-        height: auto;
-        width: 50%;
+    .header__Link, .header__Link--edit{
+      font-size: 22px;
     }
 
     /* Seccion 1 */
