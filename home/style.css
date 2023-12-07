@@ -6,9 +6,7 @@
     font-size: 20px;
     --main-bg-color-1: black;
     --main-bg-color-2: white;
-    /* --main-bg-color-3:  #86e261; Fondo general */
     --main-bg-color-3:  #D8D8D8; /*Fondo general*/
-    /* --main-bg-color-4: #21313f; Color letra titulo y texto */
     --main-bg-color-4: #091602; /*Color letra titulo y texto*/
     --main-bg-color-5: #1b3039; /* Fondo header, fooler */
     --main-bg-color-6: #eceff1; /*Color letra header, foooler*/
@@ -47,31 +45,27 @@ header{
     position: fixed;
     width: 100%;
     height: auto;
-    padding: 0px 10%;
+    padding: 0px 210px;
 }
 
 /* Contenedor del header */
 .header__Container{
     max-width: 1900px;
     width: 100%;
-    flex-direction: column;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Estilos de la funcion de Javascript  */
 header.abajo{
     background: var(--main-bg-color-4);
     height: auto;
+    padding: 0px 210px;
     display: flex;
     transition: ease .5s;
-    justify-content: space-evenly;
+    width: 100%;
 }
-.header__Box.abajo{
-    background-color: var(--main-bg-color-4);
-    transition: ease .5s;
-    /* width: 100%; */
-} 
 #headerLink.abajo{
     color: var(--main-bg-color-3);
     transition: ease .5s;
@@ -80,11 +74,9 @@ header.abajo{
 
 /* Logo */
 .header__Logo{
-  background-color: rebeccapurple;
-    cursor: pointer;
+  cursor: pointer;
 }
 .header__Image{
-  /* background-color: rebeccapurple; */
     height: 100px;
     width: 100px;
     object-fit: contain;
@@ -119,9 +111,6 @@ header.abajo{
 /* Main */
 
 /* Seccion 1 */
-main{
-    border-bottom: solid 1px var(--main-bg-color-5);
-}
 .seccion_1{
     display: flex;
     justify-content: space-evenly;
@@ -130,11 +119,12 @@ main{
     height: 1080px;
     width: 100%;
     max-width: 1900px;
+    margin: 100px;
 }
-
 /* Titulo principal de la Seccion */
 .seccion_1__Title{
     font-size: 60px;
+    width: auto;
     font-style: normal;
     font-weight: 800;
     color: var(--main-bg-color-4);
@@ -143,6 +133,7 @@ main{
 /* Texto de Seccion 1 */
 .seccion_1__Text{
     color: var(--main-bg-color-4);
+    width: auto;
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -192,7 +183,11 @@ main{
     align-items: center; 
     flex-direction: column;
     padding: 0px 0px 100px 0px;
-    max-width: 1900px;
+    /* max-width: 1900px; */
+    background-color: var(--main-bg-color-2);
+}
+.seccion_2--modif{
+    background-color: var(--main-bg-color-3);
 }
 
 /* Clase del contenedor dentro de la seccion 2 */
@@ -200,8 +195,9 @@ main{
     display: grid;
     gap: 50px;
     width: 100%;
+    height: 100%;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 0px 80px;
+    padding: 40px 210px;
 }
 
 /* Titulo principal de la Seccion */
@@ -249,12 +245,13 @@ main{
 }
 .card__Title{
     display: flex;
+    height: 140px;
     justify-content: center;
+    text-align: justify;
     align-items: center;
     position: absolute;
     bottom: 0px;
     font-size: 24px;
-    height: auto;
     padding: 10px;
     width: 100%;
     color: var(--main-bg-color-4);
@@ -319,7 +316,8 @@ main{
 
 /* Seccion 3  Formulario */
 .seccion_3{
-    padding: 0px 80px;
+    background-color: var(--main-bg-color-2);
+    padding: 20px 80px;
     max-width: 1900px;
     display: grid;
     gap: 10px;
@@ -327,6 +325,7 @@ main{
     height:600px;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
+    color: var(--main-bg-color-4);
 }
 .seccion_3__Formulary{
     align-items: center;
@@ -361,15 +360,18 @@ main{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    border: solid var(--main-bg-color-1) 1px;
+    border: solid var(--hover) 1px;
     border-radius: 2px;
     height: 40px;
+    padding: 0 16px;
     width: 100%;
+    border-radius: 10px;
 }
 .seccion_3__Format--Text{
+    border-radius: 10px;
+    padding: 0 16px;
     height: 100px;
-    border: solid var(--main-bg-color-1) 1px;
-    border-radius: 2px;
+    border: solid var(--hover) 1px;
     width: 100%;
 }
 .seccion_3__Botton{
@@ -405,11 +407,12 @@ main{
 
 .footer{
     display: flex;
-    height: 250px;
+    height: 150px;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    color: var(--main-bg-color-6);
+    color: var(--main-bg-color-3);
+    background-color: var(--main-bg-color-4);
 }
 
 /* Caja dentro del footer donde aplico el max width */
@@ -459,10 +462,21 @@ main{
 
 /* Medias Querys */
 @media (max-width: 1500px) {
-    
     /* Seccion 1 */
     .seccion_1{
         height: 750px;
+    }
+    /* Seccion 2 */
+    
+    .seccion_2__Content{
+        padding: 40 110px;
+    }
+    .card{
+        height: 450px;
+    }
+    .card__Title, .card__Title--modif{
+        font-size: 20px;
+        height: 100px;
     }
     /* Seccion 3 */
     .seccion_3__Formulary form{
@@ -476,25 +490,32 @@ main{
 }
 
 @media (max-width: 1300px) {
+    /* Header */
+    header, .header.abajo{
+        padding: 40 100px;
+        background-color: rebeccapurple;
+    }
     
     /* Seccion 1 */
     .seccion_1{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 820px;
+        height: 600px;
     }
     .seccion_1__Title{
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 800;
     }
     .seccion_1__Text{
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 800;
     }
     .seccion_1__Image{
-        width: 45%;
+        width: 35%;
         height: auto;
+    }
+
+    /* links seccion 2 */
+    .links{
+        height: 100px;
     }
 
     /* Seccion 3 */
@@ -538,6 +559,17 @@ main{
     }
 }
 @media (max-width: 920px){
+    /* Header */
+    .header, .header.abajo{
+        padding: 0 70px;
+    }
+    .header__Container{
+        justify-content: space-between;
+    }
+    .header__Link, .header__Link--edit{
+        font-size: 20px;
+    }
+
     /* Seccion 1 */
     .seccion_1{
         height: 650px;
@@ -558,6 +590,15 @@ main{
     /* Seccion 2 */
     .seccion_1__Box{
         margin: 0px 32px 0px 32px ;
+    }
+
+    /* Seccion 2 */
+    .seccion_2__Content{
+        padding: 40 80px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    .seccion_2__Title-Primary{
+        margin: 0;
     }
 
     /* Seccion 3 */
@@ -603,6 +644,29 @@ main{
     }
 }
 @media (max-width: 700px){
+    /* Header */
+    .header, .header.abajo{
+        padding: 0 25px;
+    }
+
+    .header__Link, .header__Link--edit{
+        font-size: 18px;
+    }
+
+    /* Seccion 2 */
+    .seccion_2__Content{
+    padding: 40px 40px;
+    }
+    .seccion_2__Title-Primary {
+        font-size: 40px;
+    }
+    .card__Title, .card__Title--modif {
+        font-size: 18px;
+    }
+    .card__Text{
+        font-size: 12px;
+    }
+
     /* Seccion 3 */
     .seccion_3__Formulary{
         width: 250px;
@@ -627,12 +691,27 @@ main{
         display: flex;
         align-items: center;
     }
+    .footer{
+        height: 220px;
+    }
+    .footer__Box{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 100%;
+    }
 }
 @media (max-width: 620px){
     
     /* Header */
+    .header__Container{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
     .header__Link, .header__Link--edit{
-      font-size: 22px;
+      font-size: 16px;
     }
 
     /* Seccion 1 */
@@ -718,6 +797,7 @@ main{
         font-size: 12px;
         display: flex;
         justify-content: space-evenly;
+        height: 200px;
     }
     .footer__Box li, .footer__Shortcuts, .footer__Box h3{
         font-size: 14px;
@@ -728,6 +808,16 @@ main{
 }
 
 @media (max-width: 400px){
+    /* Header */
+    .header, .header.abajo{
+        padding: 0 10px;
+    }
+    .header__Container{
+        flex-direction: column;
+    }
+    .header__Link, .header__Link--edit{
+        margin-top: 10px;
+    }
     /* Seccion 1 */
     .seccion_1{
         height: 450px;
