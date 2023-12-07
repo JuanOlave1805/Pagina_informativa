@@ -4,14 +4,13 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    --main-bg-color-1: black;
-    --main-bg-color-2: white;
-    --main-bg-color-3:  #D8D8D8; /*Fondo general*/
-    --main-bg-color-4: #091602; /*Color letra titulo y texto*/
-    --main-bg-color-5: #1b3039; /* Fondo header, fooler */
-    --main-bg-color-6: #eceff1; /*Color letra header, foooler*/
-    --main-bg-color-7: #9CCE88; 
+    --black: black;
+    --white: white;
+    --fondo_1:  #D8D8D8; /*Fondo general*/
+    --fondo_primary: #091602; /*Color letra header, foooler*/ 
+    --text: #eceff1; /*Color letra titulo y texto*/
     --hover: #616b61;
+    --bg-button: #1f3a0a;
     --main-transparent: transparent;
 }
 
@@ -22,7 +21,6 @@ html{
 
 /* Body */
 body{
-    background-color: var(--main-bg-color-3);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -59,7 +57,7 @@ header{
 
 /* Estilos de la funcion de Javascript  */
 header.abajo{
-    background: var(--main-bg-color-4);
+    background: var(--fondo_primary);
     height: auto;
     padding: 0px 210px;
     display: flex;
@@ -67,7 +65,7 @@ header.abajo{
     width: 100%;
 }
 #headerLink.abajo{
-    color: var(--main-bg-color-3);
+    color: var(--text);
     transition: ease .5s;
     display: block;
 }
@@ -120,6 +118,7 @@ header.abajo{
     width: 100%;
     max-width: 1900px;
     margin: 100px;
+    background-color: var(--white);
 }
 /* Titulo principal de la Seccion */
 .seccion_1__Title{
@@ -127,12 +126,12 @@ header.abajo{
     width: auto;
     font-style: normal;
     font-weight: 800;
-    color: var(--main-bg-color-4);
+    color: var(--fondo_primary);
 }
 
 /* Texto de Seccion 1 */
 .seccion_1__Text{
-    color: var(--main-bg-color-4);
+    color: var(--fondo_primary);
     width: auto;
     font-family: Inter;
     font-size: 24px;
@@ -150,21 +149,23 @@ header.abajo{
     border: none;
     margin-top: 20px;
     transition: all 0.3s;
-    background-color: var(--main-bg-color-4);
-    color: var(--main-bg-color-4);
+    color: var(--fondo_primary);
     transition: ease .5s;
+    border: solid var(--fondo_primary) 1px;
 }
 .seccion_1__Button a{
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: var(--main-bg-color-3);
+    color: var(--fondo_primary);
 }
 .seccion_1__Button:hover{
     cursor: pointer;
-    background:  var(--hover);
-    color: var(--main-bg-color-4);
+    background:  var(--fondo_primary);
     transform: scale(1.1);
+}
+.seccion_1__Button a:hover, .seccion_1__Button:hover{
+    color: var(--white);
 }
 
 /* Imagen de la Seccion 1 */
@@ -184,10 +185,10 @@ header.abajo{
     flex-direction: column;
     padding: 0px 0px 100px 0px;
     /* max-width: 1900px; */
-    background-color: var(--main-bg-color-2);
+    background-color: var(--fondo_1);
 }
 .seccion_2--modif{
-    background-color: var(--main-bg-color-3);
+    background-color: var(--white);
 }
 
 /* Clase del contenedor dentro de la seccion 2 */
@@ -209,7 +210,7 @@ header.abajo{
     width: 100%;
     margin-bottom: 120px;
     font-size: 60px;
-    color: var(--main-bg-color-4);
+    color: var(--fondo_primary);
     font: bold;
 }
 
@@ -235,7 +236,7 @@ header.abajo{
 }
 .card__Front{
     transform: perspective(600px) rotate(0deg);
-    box-shadow: 0 5px 10px black;
+    box-shadow: 0 5px 10px var(--black);
 }
 .card__Image{
     position: absolute;
@@ -254,16 +255,16 @@ header.abajo{
     font-size: 24px;
     padding: 10px;
     width: 100%;
-    color: var(--main-bg-color-4);
-    background: var(--main-bg-color-6);
+    color: var(--fondo_primary);
+    background: var(--text);
     border-radius: 10px;
 }
 /* Trasera */
 .card__Back{
     transform:perspective(600px) rotateY(180deg);
     padding: 5px;
-    color: var(--main-bg-color-4);
-    background: var(--main-bg-color-6);
+    color: var(--fondo_primary);
+    background: var(--text);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -276,15 +277,15 @@ header.abajo{
     flex-direction: column;
     width: 100%;
     font-size: 24px;
-    color: var(--main-bg-color-4);
+    color: var(--fondo_primary);
 }
 .card__Link{
-    border-top: solid 1px var(--main-bg-color-4);
+    border-top: solid 1px var(--fondo_primary);
     height: 50px;
     line-height: 50px;
 }
 .card__Link a{
-    color: var(--main-bg-color-4);
+    color: var(--fondo_primary);
     text-decoration:dotted;  
     font-size: 20px;
 }
@@ -316,13 +317,13 @@ header.abajo{
 
 /* Seccion 3  Formulario */
 .seccion_3{
-    background-color: var(--main-bg-color-2);
+    background-color: var(--text);
     padding: 20px 80px;
     max-width: 1900px;
     display: grid;
     gap: 10px;
     width: 100%;
-    height:600px;
+    height:700px;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
     color: var(--main-bg-color-4);
@@ -345,7 +346,7 @@ header.abajo{
     font-size: 60px;
     display: flex;
     margin-bottom: 20px;
-    text-decoration: underline;
+    text-decoration: none;
     width: 600px;
     text-align: start;
 }
@@ -369,15 +370,23 @@ header.abajo{
 }
 .seccion_3__Format--Text{
     border-radius: 10px;
-    padding: 0 16px;
+    padding: 5px 16px 0px;
     height: 100px;
     border: solid var(--hover) 1px;
     width: 100%;
 }
+.seccion_3__Format:hover, .seccion_3__Format--Text:hover {
+    outline: none;
+    border: solid var(--hover) 1px;
+  }
+.seccion_3__Format:focus, .seccion_3__Format--Text:focus {
+  outline: none;
+  border: solid var(--fondo_primary) 1px;
+}
 .seccion_3__Botton{
     width: 130px;
-    background: var(--main-bg-color-5);
-    color: var(--main-bg-color-6);
+    background: var(--fondo_primary);
+    color: var(--text);
     height: 40px;
     border-radius: 10px;
     margin-top: 20px;
@@ -386,8 +395,6 @@ header.abajo{
 }
 .seccion_3__Botton:hover{
     text-align: center;
-    background: var(--main-bg-color-6);
-    color: var(--main-bg-color-5);
     transform: scale(1.1)
 }
 .seccion_3__Box{
@@ -411,8 +418,8 @@ header.abajo{
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    color: var(--main-bg-color-3);
-    background-color: var(--main-bg-color-4);
+    color: var(--text);
+    background-color: var(--fondo_primary);
 }
 
 /* Caja dentro del footer donde aplico el max width */
@@ -447,13 +454,6 @@ header.abajo{
     padding: 4px;
     margin-right: 5px;
 }
-
-/* Links */
-.footer__Shortcuts{
-    text-decoration: none;
-    color: var(--main-bg-color-6);
-}
-
 
 
 
@@ -491,9 +491,11 @@ header.abajo{
 
 @media (max-width: 1300px) {
     /* Header */
-    header, .header.abajo{
-        padding: 40 100px;
-        background-color: rebeccapurple;
+    .header__Container{
+        width: 100%;
+    }
+    header.abajo{
+        width: 100%;
     }
     
     /* Seccion 1 */
@@ -511,6 +513,12 @@ header.abajo{
     .seccion_1__Image{
         width: 35%;
         height: auto;
+    }
+
+    /* Seccion 2 */
+    .seccion_2__Content{
+        padding: 40 80px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 
     /* links seccion 2 */
@@ -558,7 +566,7 @@ header.abajo{
         justify-content: space-around;
     }
 }
-@media (max-width: 920px){
+@media (max-width: 1020px){
     /* Header */
     .header, .header.abajo{
         padding: 0 70px;
@@ -593,12 +601,12 @@ header.abajo{
     }
 
     /* Seccion 2 */
-    .seccion_2__Content{
-        padding: 40 80px;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
+    
     .seccion_2__Title-Primary{
         margin: 0;
+    }
+    .seccion_2__Content{
+        padding: 0px 70px;
     }
 
     /* Seccion 3 */
@@ -729,8 +737,14 @@ header.abajo{
     .seccion_1__Text{
         font-size: 16px;
     }
+    .seccion_1__Button{
+        display: flex;
+        align-items: center;
+        padding: 5px 16px;
+        height: 100%;
+    }
     .seccion_1__Button a{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /* Seccion 3 */
@@ -829,6 +843,9 @@ header.abajo{
         font-size: 20px;
     }
     .seccion_1__Text{
+        font-size: 12px;
+    }
+    .seccion_1__Button a{
         font-size: 12px;
     }
     
