@@ -1,11 +1,9 @@
+//Despliega el header
 window.addEventListener("scroll", function(){
     var header = document.querySelector("header");
     header.classList.toggle("abajo",window.scrollY>0);
   })
-window.addEventListener("scroll", function(){
-    var header = document.querySelector(".header__Box");
-    header.classList.toggle("abajo",window.scrollY>0);
-  })
+//Desplega los link
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header__Link");
     header.classList.toggle("abajo",window.scrollY>0);
@@ -14,7 +12,7 @@ window.addEventListener("scroll", function(){
     var header = document.querySelector(".header__Link--edit");
     header.classList.toggle("abajo",window.scrollY>0);
   })
-
+//NOTA: Todo se ejecuta a la vez
 
 
 

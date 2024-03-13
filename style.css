@@ -40,27 +40,32 @@ header{
     background-color:var(--main-transparent);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
     position: fixed;
     width: 100%;
     height: auto;
-    padding: 0px 210px;
 }
 
 /* Contenedor del header */
 .header__Container{
     max-width: 1900px;
     width: 100%;
+    padding: 0px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 60%;
+    justify-content: space-between;
+}
 /* Estilos de la funcion de Javascript  */
 header.abajo{
     background: var(--fondo_primary);
     height: auto;
-    padding: 0px 210px;
     display: flex;
     transition: ease .5s;
     width: 100%;
@@ -99,7 +104,7 @@ header.abajo{
 .header__Link--edit, .header__Link{
     display: none;
     transition: ease 0.5s;
-    font-size: 28px;
+    font-size: clamp(16px, 4vw, 24px);
     text-decoration: none;
 }
 
@@ -113,19 +118,16 @@ header.abajo{
 .seccion_1{
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row;
     align-items: center;
-    height: 1080px;
-    width: 100%;
-    max-width: 1900px;
-    margin: 100px;
+    height: clamp(600px,95vw,900px);
+    width: auto;
+    padding: 50px;
     background-color: var(--white);
 }
 /* Titulo principal de la Seccion */
 .seccion_1__Title{
-    font-size: 60px;
+    font-size: clamp(25px, 5vw, 60px);
     width: auto;
-    font-style: normal;
     font-weight: 800;
     color: var(--fondo_primary);
 }
@@ -134,11 +136,9 @@ header.abajo{
 .seccion_1__Text{
     color: var(--fondo_primary);
     width: auto;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 800;   
-    line-height: normal;
+    font-size: clamp(14px, 3vw, 30px);
+    font-weight: 400;   
+    width: 70%;
 }
 
 /* Boton de la Seccion 1 */
@@ -146,7 +146,7 @@ header.abajo{
     height: 44px;
     width: auto;
     padding: 0px 24px 0px 24px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     margin-top: 20px;
     transition: all 0.3s;
@@ -156,12 +156,13 @@ header.abajo{
 }
 .seccion_1__Button a{
     height: 100%;
-    width: 100%;
     text-decoration: none;
     color: var(--fondo_primary);
+    font-size: clamp(14px, 4vw, 18px);
 }
 .seccion_1__Button:hover{
     cursor: pointer;
+    text-align: center;
     background:  var(--fondo_primary);
     transform: scale(1.1);
 }
@@ -171,8 +172,8 @@ header.abajo{
 
 /* Imagen de la Seccion 1 */
 .seccion_1__Image{
-    width: 510px;
-    height: 390px;
+    width: clamp(200px,40vw,500px);
+    height: auto;
 }
 
 
@@ -185,8 +186,8 @@ header.abajo{
     align-items: center; 
     flex-direction: column;
     padding: 0px 0px 100px 0px;
-    /* max-width: 1900px; */
     background-color: var(--fondo_1);
+    /* max-width: 1900px; */
 }
 .seccion_2--modif{
     background-color: var(--white);
@@ -194,23 +195,23 @@ header.abajo{
 
 /* Clase del contenedor dentro de la seccion 2 */
 .seccion_2__Content{
+    max-width: 1500px;
     display: grid;
     gap: 50px;
     width: 100%;
     height: 100%;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 40px 210px;
+    /* padding: 40px 210px; */
 }
 
 /* Titulo principal de la Seccion */
 .seccion_2__Title-Primary{
     display: flex;
     justify-content: center;    
-    max-width: 1900px;
     height: auto;
     width: 100%;
     margin-bottom: 120px;
-    font-size: 60px;
+    font-size: clamp(24px, 4vw, 60px);
     color: var(--fondo_primary);
     font: bold;
 }
@@ -252,7 +253,7 @@ header.abajo{
     align-items: center;
     position: absolute;
     bottom: 0px;
-    font-size: 20px;
+    font-size: clamp(16px, 4vw, 22px);
     padding: 10px;
     width: 100%;
     color: var(--fondo_primary);
@@ -276,7 +277,7 @@ header.abajo{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    font-size: 24px;
+    font-size: clamp(18px, 4vw, 24px);
     color: var(--fondo_primary);
 }
 .card__Link{
@@ -287,14 +288,13 @@ header.abajo{
 .card__Link a{
     color: var(--fondo_primary);
     text-decoration:dotted;  
-    font-size: 20px;
+    font-size:clamp(18px, 4vw, 24px);
 }
 .card__Text{
     letter-spacing: 1px;
-    font-size: 14px;
-    text-align: justify;
+    font-size: clamp(14px, 4vw, 18px);
+    text-align: left;
     margin: 10px;
-
 }
 
 /* Giro de las cards */
@@ -325,7 +325,7 @@ header.abajo{
     width: 100%;
     height:700px;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: space-evenly;
+    justify-content: center;
     color: var(--main-bg-color-4);
 }
 .seccion_3__Formulary{
@@ -339,23 +339,23 @@ header.abajo{
     transition: ease .5s;
 }
 
-.seccion_3__Formulary div {
+.seccion_3__Formulary {
     width: auto;
 }
 .seccion_3__Title{
-    font-size: 60px;
+    font-size: clamp(24px, 4vw, 60px);
     display: flex;
     margin-bottom: 20px;
     text-decoration: none;
-    width: 600px;
-    text-align: start;
+    width: auto;
 }
 .seccion_3__Text{
     margin-bottom: 20px;
-    width: 600px;
+    font-size: clamp(14px, 3vw, 30px);
+    width: 40vw;
 }
 .seccion_3__Formulary form{
-  width: 70%;
+  width: 40vw;
 }
 .seccion_3__Format{
     display: flex;
@@ -367,8 +367,11 @@ header.abajo{
     padding: 0 16px;
     width: 100%;
     border-radius: 10px;
+    font-size: clamp(16px, 3vw, 24px);
+
 }
 .seccion_3__Format--Text{
+    font-size: clamp(16px, 3vw, 24px);
     border-radius: 10px;
     padding: 5px 16px 0px;
     height: 100px;
@@ -406,15 +409,15 @@ header.abajo{
 .seccion_3__Image{
     display: flex;
     justify-content: center;
-    height: 550px;    
+    height: clamp(100px, 60vw, 550px);    
 }
 
 
 /* Footer */
-
 .footer{
     display: flex;
-    height: 150px;
+    height: auto;
+    padding: 40px 0px;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
@@ -436,6 +439,7 @@ header.abajo{
 /* Links en el footer */
 .footer__Box li a{
     text-decoration: none;
+    font-size: clamp(14px, 4vw, 18px);
     color: var(--main-bg-color-6);
 }
 /* Clase de el apartado email */
@@ -453,6 +457,7 @@ header.abajo{
     border-radius: 100%;
     padding: 4px;
     margin-right: 5px;
+    font-size: clamp(14px, 4vw, 18px);
 }
 
 
@@ -462,404 +467,176 @@ header.abajo{
 
 /* Medias Querys */
 @media (max-width: 1500px) {
-    /* Seccion 1 */
-    .seccion_1{
-        height: 750px;
-    }
     /* Seccion 2 */
-    
     .seccion_2__Content{
-        padding: 40 110px;
+        width: 87%;
     }
     .card{
         height: 450px;
     }
     .card__Title, .card__Title--modif{
-        font-size: 20px;
         height: 100px;
     }
     /* Seccion 3 */
-    .seccion_3__Formulary form{
-      width: 100%;
-    }
+
     .seccion_3__Image{
         width: 90%;
         height: auto;
-    }
-    
+    }   
 }
 
 @media (max-width: 1300px) {
-    /* Header */
-    .header__Container{
-        width: 100%;
-    }
-    header.abajo{
-        width: 100%;
-    }
-    
-    /* Seccion 1 */
-    .seccion_1{
-        height: 600px;
-    }
-    .seccion_1__Title{
-        font-size: 45px;
-        font-weight: 800;
-    }
-    .seccion_1__Text{
-        font-size: 20px;
-        font-weight: 800;
-    }
-    .seccion_1__Image{
-        width: 35%;
-        height: auto;
-    }
-
     /* Seccion 2 */
     .seccion_2__Content{
-        padding: 40 80px;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
-
     /* links seccion 2 */
     .links{
         height: 100px;
     }
-
     /* Seccion 3 */
     .seccion_3{
         display: flex;
-        margin: 0px 32px 0px 32px ;
         justify-content: space-around;
         align-items: center;
     }
     .seccion_3__Formulary{
         justify-content: center;
-        width: 500px;
+        width: auto;
     }
     .seccion_3__Title{
-        font-size: 40px;
         width: 100%;
-    }
-    .seccion_3__Text{
-        width: 100%;    
-        font-size: 20px;
-    }
-    .seccion_3__Format{
-        width: 100%;
-    }
-    .seccion_3__Format--Text{
-        width: 500px;
-    }
-    .seccion_3__Box{
-        height: 500px;
-    }
-    .seccion_3__Image{
-        height: 320px;   
-        width: auto; 
-    }
-
-    /* Footer */
-
-    .footer{
-        display: flex;
-        justify-content: space-around;
     }
 }
 @media (max-width: 1020px){
-    /* Header */
-    .header, .header.abajo{
-        padding: 0 70px;
-    }
-    .header__Container{
-        justify-content: space-between;
-    }
-    .header__Link, .header__Link--edit{
-        font-size: 20px;
-    }
-
     /* Seccion 1 */
     .seccion_1{
-        height: 650px;
-        margin: 0px 32px 0px 32px ;
+        /* height: 650px; */
+        width: 95%;
         display: flex;
         justify-content: center;
     }
-    .seccion_1__Image{
-        height: auto;
-        width: 48%;
-    }
-    .seccion_1__Title{
-        font-size: 40px;
-    }
-    .seccion_1__Text{
-        font-size: 20px;
-    }
-    /* Seccion 2 */
-    .seccion_1__Box{
-        margin: 0px 32px 0px 32px ;
-    }
-
     /* Seccion 2 */
     
     .seccion_2__Title-Primary{
         margin: 0;
     }
-    .seccion_2__Content{
-        padding: 0px 70px;
-    }
-
     /* Seccion 3 */
-    .seccion_3{
-        height: auto;
-    }
-    .seccion_3__Formulary{
-        width: 50%;
-    }
-    .seccion_3__Title{
-        font-size: 30px;
-    }
-    .seccion_3__Format, .seccion_3__Format--Text{
-        width: 100%;
-    }
-    .seccion_3__Image{
-        width: 80%;
-        height: auto;
-    }
-
-    .seccion_3__Box{
-        height: 510px;
-    }
-    .seccion_3__Title{
-        display: flex;
-        margin-left: 20%;
-    }
     .seccion_3__Text{
-        width: 100%;
         display: flex;
         justify-content: center;
     }
 
     /* Footer */
-
     .footer{
         display: flex;
+        width: 100%;
         justify-content: space-around;
-        font-size: 15px;
     }
-    .footer__Box li a {
-	font-size: 15px
+    .footer__Box{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 10px;
+        height: auto;
     }
 }
 @media (max-width: 700px){
     /* Header */
-    .header, .header.abajo{
-        padding: 0 25px;
+    .header__Container{
+        padding: 0px 5%;
     }
-
-    .header__Link, .header__Link--edit{
-        font-size: 18px;
-    }
-
-    /* Seccion 2 */
-    .seccion_2__Content{
-    padding: 40px 40px;
-    }
-    .seccion_2__Title-Primary {
-        font-size: 40px;
-    }
-    .card__Title, .card__Title--modif {
-        font-size: 18px;
-    }
-    .card__Text{
-        font-size: 12px;
-    }
-
-    /* Seccion 3 */
-    .seccion_3__Formulary{
-        width: 250px;
-    }
-    .seccion_3__Title{
-        font-size: 25px;
-    }
-    .seccion_3__Text{
-        font-size: 20px;
+    .row{
+        display: flex;
+        justify-content: space-around;
         width: 100%;
+        padding-bottom: 10px;
+    }
+    /* Seccion 1 */
+    .seccion_1{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .seccion_1__Title{
+        padding-bottom: 5px;
+    }
+    .seccion_1__Text{
+        text-align: start;
+        width: 90%;
+    }
+    .seccion_1__Button{
+        display: flex;
+        align-items: center;
+        padding: 10px 16px;
+        height: 100%;
+        width: auto;
+    }
+    .seccion_1__Image{
+        padding-bottom: 20px;
+    }
+    /* Seccion 3 */
+    .seccion_3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+    .seccion_3__Formulary form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
     }
     .seccion_3__Format{
-        width: 250px;
-    }
-    .seccion_3__Format--Text{
-        width: 100%;
-    }
-    
-    .seccion_3__Image{
-        height: 300px;
-        width: auto;
         display: flex;
-        align-items: center;
     }
-    .footer{
-        height: 220px;
-    }
-    .footer__Box{
+    .seccion_3__Title{
+        width: 90%;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        height: 100%;
+        justify-content: center;
     }
+    .seccion_3__Text{
+        text-align: justify;
+        width: 90%;
+    }
+
 }
 @media (max-width: 620px){
     
     /* Header */
     .header__Container{
         width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .header__Link, .header__Link--edit{
-      font-size: 16px;
+        flex-direction: column;
+        align-items: start;
     }
 
+    /* Seccion 2 */
+    .seccion_2__Content{
+        width: 95%;
+    }
+}
+
+@media (max-width: 400px){    
     /* Seccion 1 */
     .seccion_1{
-        height: 700px;
-    }
-    .seccion_1__Image{
-        height: auto;
-        width: 40%;
-    }
-
-    .seccion_1__Title{
-        font-size: 24px;
-    }
-    .seccion_1__Text{
-        font-size: 16px;
-    }
-    .seccion_1__Button{
-        display: flex;
-        align-items: center;
-        padding: 5px 16px;
-        height: 100%;
-    }
-    .seccion_1__Button a{
-        font-size: 14px;
-    }
-
-    /* Seccion 3 */
-    .seccion_3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
-        height: 1000px;
-    }
-    .seccion_3__Formulary{
-        font-size: 20px;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        order: 2;
-    }
-    .seccion_3__Formulary form{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .seccion_3__Format{
-        font-size: 15px;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .seccion_3__Format{
-        .__Box{
-        display: flex;
-        width: 50%;
-        height: auto;
-        order: 1;
-    }
-    .seccion_3__Image{
-        width: 100%;
-        height: auto
-    }
-    .seccion_3__Title{
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-    }
-    .seccion_3__Text{
-        font-size: 20px;
-        width: 80%;
-        text-align: justify;
-        display: flex;
-        justify-self: center;
-    }
-    .seccion_3__Format{
-        width: 100%;
-    }
-    .seccion_3__Format--Text{
-        width: 100%;
-    }
-}
-
-    /* Footer */
-    .footer{
-        font-size: 12px;
-        display: flex;
-        justify-content: space-evenly;
-        height: 200px;
-    }
-    .footer__Box li, .footer__Shortcuts, .footer__Box h3{
-        font-size: 14px;
-    }
-    .footer__Box li a{
-	font-size: 12px;
-    }
-}
-
-@media (max-width: 400px){
-    /* Header */
-    .header, .header.abajo{
-        padding: 0 10px;
-    }
-    .header__Container{
-        flex-direction: column;
+        padding: 0px;
     }
     .header__Link, .header__Link--edit{
         margin-top: 10px;
     }
-    /* Seccion 1 */
-    .seccion_1{
-        height: 450px;
-    }
-    .seccion_1__Box{
-        width: 48%;
-    }
-    .seccion_1__Title{
-        font-size: 20px;
-    }
-    .seccion_1__Text{
-        font-size: 12px;
-    }
-    .seccion_1__Button a{
-        font-size: 12px;
-    }
-    
-    /* Seccion 3 */
-    .seccion_3__Title{
-        font-size: 20px;
-    }
     .seccion_3__Text{
-        font-size: 15px;
         width: 100%;
     }
-    .seccion_3__Image{
-        height: auto;
-        width: 90%;
-        left: 20px;
+    .seccion_3__Formulary form{
+        width: 100%;
     }
 }
