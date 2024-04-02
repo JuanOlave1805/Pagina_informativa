@@ -104,7 +104,7 @@ header.abajo{
 .header__Link--edit, .header__Link{
     display: none;
     transition: ease 0.5s;
-    font-size: clamp(16px, 4vw, 24px);
+    font-size: clamp(16px, 3vw, 24px);
     text-decoration: none;
 }
 
@@ -136,7 +136,7 @@ header.abajo{
 .seccion_1__Text{
     color: var(--fondo_primary);
     width: auto;
-    font-size: clamp(14px, 3vw, 30px);
+    font-size: clamp(14px, 2vw, 30px);
     font-weight: 400;   
     width: 70%;
 }
@@ -180,6 +180,7 @@ header.abajo{
 
 /* Seccion 2 */
 .seccion_2{
+    position: relative;
     height: auto;
     width: 100%;
     display: flex;
@@ -198,9 +199,9 @@ header.abajo{
     max-width: 1500px;
     display: grid;
     gap: 50px;
-    width: 100%;
+    width: 10   0%;
     height: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     /* padding: 40px 210px; */
 }
 
@@ -214,6 +215,8 @@ header.abajo{
     font-size: clamp(24px, 4vw, 60px);
     color: var(--fondo_primary);
     font: bold;
+    position: absolute;
+    top: 3vh;
 }
 
 /* Card */
@@ -234,7 +237,6 @@ header.abajo{
     border-radius: 20px;
     overflow: hidden;
     transition: .5s;
-    
 }
 .card__Front{
     transform: perspective(600px) rotate(0deg);
@@ -253,7 +255,7 @@ header.abajo{
     align-items: center;
     position: absolute;
     bottom: 0px;
-    font-size: clamp(16px, 4vw, 22px);
+    font-size: clamp(16px, 2vw, 22px);
     padding: 10px;
     width: 100%;
     color: var(--fondo_primary);
@@ -277,7 +279,7 @@ header.abajo{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    font-size: clamp(18px, 4vw, 24px);
+    font-size: clamp(18px, 3vw, 24px);
     color: var(--fondo_primary);
 }
 .card__Link{
@@ -288,11 +290,11 @@ header.abajo{
 .card__Link a{
     color: var(--fondo_primary);
     text-decoration:dotted;  
-    font-size:clamp(18px, 4vw, 24px);
+    font-size:clamp(18px, 3vw, 24px);
 }
 .card__Text{
     letter-spacing: 1px;
-    font-size: clamp(14px, 4vw, 18px);
+    font-size: clamp(14px, 2vw, 18px);
     text-align: left;
     margin: 10px;
 }
@@ -351,7 +353,7 @@ header.abajo{
 }
 .seccion_3__Text{
     margin-bottom: 20px;
-    font-size: clamp(14px, 3vw, 30px);
+    font-size: clamp(14px, 2vw, 30px);
     width: 40vw;
 }
 .seccion_3__Formulary form{
@@ -487,9 +489,6 @@ header.abajo{
 
 @media (max-width: 1300px) {
     /* Seccion 2 */
-    .seccion_2__Content{
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
     /* links seccion 2 */
     .links{
         height: 100px;
@@ -541,7 +540,7 @@ header.abajo{
         height: auto;
     }
 }
-@media (max-width: 700px){
+@media (max-width: 800px){
     /* Header */
     .header__Container{
         padding: 0px 5%;
@@ -569,6 +568,7 @@ header.abajo{
     .seccion_1__Text{
         text-align: start;
         width: 90%;
+        font-size: clamp(14px, 3vw, 30px);
     }
     .seccion_1__Button{
         display: flex;
@@ -579,6 +579,14 @@ header.abajo{
     }
     .seccion_1__Image{
         padding-bottom: 20px;
+    }
+    /* Seccion 2 */
+    .seccion_2__Content{
+        background-color: rebeccapurple;
+        width: 70%;
+    }
+    .card{
+        height: 40vh;
     }
     /* Seccion 3 */
     .seccion_3{
@@ -621,8 +629,10 @@ header.abajo{
 
     /* Seccion 2 */
     .seccion_2__Content{
-        width: 95%;
+        grid-template-columns: 1fr;
+        width: 80%;
     }
+
 }
 
 @media (max-width: 400px){    
