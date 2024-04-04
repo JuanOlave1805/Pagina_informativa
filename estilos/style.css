@@ -127,7 +127,7 @@ header.abajo{
 /* Titulo principal de la Seccion */
 .seccion_1__Title{
     font-size: clamp(25px, 4vw, 60px);
-    width: 70%;
+    width: 80%;
     font-weight: 800;
     color: var(--fondo_primary);
 }
@@ -137,7 +137,7 @@ header.abajo{
     color: var(--fondo_primary);
     font-size: clamp(14px, 2vw, 30px);
     font-weight: 400;   
-    width: 70%;
+    width: 80%;
 }
 
 /* Boton de la Seccion 1 */
@@ -187,7 +187,6 @@ header.abajo{
     flex-direction: column;
     padding: 0px 0px 100px 0px;
     background-color: var(--fondo_1);
-    /* max-width: 1900px; */
 }
 .seccion_2--modif{
     background-color: var(--white);
@@ -248,12 +247,12 @@ header.abajo{
 }
 .card__Title{
     display: flex;
-    height: 15vh;
+    height: 12vh;
     justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 0px;
-    font-size: clamp(16px, 2vw, 22px);
+    font-size: clamp(15px, 2vw, 22px);
     padding: 10px;
     width: 100%;
     color: var(--fondo_primary);
@@ -279,7 +278,7 @@ header.abajo{
     width: 100%;
     height: auto;
     margin: 10px 0px;
-    font-size: clamp(18px, 3vw, 24px);
+    font-size: clamp(15px, 3vw, 24px);
     color: var(--fondo_primary);
 }
 .card__Link{
@@ -294,9 +293,9 @@ header.abajo{
 }
 .card__Text{
     letter-spacing: 1px;
-    font-size: clamp(12px, 2vw, 18px);
+    font-size: clamp(13px, 2vw, 18px);
     text-align: left;
-    overflow: scroll;
+    overflow:overlay;
     margin: 10px;
 }
 
@@ -412,7 +411,7 @@ header.abajo{
 .seccion_3__Image{
     display: flex;
     justify-content: center;
-    width: clamp(150px, 40vw, 550px);
+    width: clamp(200px, 40vw, 550px);
     height: auto;    
 }
 
@@ -475,13 +474,6 @@ header.abajo{
     .seccion_2__Content{
         width: 87%;
     }
-    .card{
-        height: 450px;
-    }
-    .card__Title, .card__Title--modif{
-        height: 5vh;
-    }
-
 }
 
 @media (max-width: 1300px) {
@@ -511,8 +503,6 @@ header.abajo{
 @media (max-width: 1020px){
     /* Seccion 1 */
     .seccion_1{
-        /* height: 650px; */
-        /* width: 95%; */
         display: flex;
         justify-content: center;
     }
@@ -547,7 +537,7 @@ header.abajo{
         padding: 0px 5%;
     }
     .header__Image{
-        width: 30vw;
+        width: 25vw;
         height: auto;
     }
     .row{
@@ -593,7 +583,6 @@ header.abajo{
     }
     /* Seccion 2 */
     .seccion_2__Content{
-        background-color: rebeccapurple;
         width: 70%;
         gap: 2vh;
     }
@@ -605,7 +594,6 @@ header.abajo{
     }
     .card__Text{
         text-align: justify;
-        overflow: scroll;
     }
     /* Seccion 3 */
     .seccion_3{
@@ -638,6 +626,11 @@ header.abajo{
 
 }
 @media (max-width: 620px){
+    /* Header */
+    .header__Image{
+      width: 35vw;
+      height: auto;
+    }
 
     /* Seccion 2 */
     .seccion_2__Content{
@@ -645,12 +638,13 @@ header.abajo{
         width: 80%;
     }
 
-    .card{
-        height: 30vh;
-    }
     .card__Title{
         padding: 10px;
         text-align: center;
+    }
+    .card__Title--modif{
+      height: auto;
+      padding: 0px 10px;
     }
 }
 
@@ -659,6 +653,11 @@ header.abajo{
     .seccion_1{
         padding: 0px;
     }
+    /* Seccion 2 */
+    .card{
+      height: 28vh;
+    }
+    /* Seccion 3 */
     .seccion_3__Text{
         width: 100%;
     }
