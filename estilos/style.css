@@ -248,7 +248,7 @@ header.abajo{
 }
 .card__Title{
     display: flex;
-    height: 12vh;
+    height: 15vh;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -296,7 +296,7 @@ header.abajo{
     letter-spacing: 1px;
     font-size: clamp(12px, 2vw, 18px);
     text-align: left;
-    overflow:overlay;
+    overflow: scroll;
     margin: 10px;
 }
 
@@ -412,7 +412,7 @@ header.abajo{
 .seccion_3__Image{
     display: flex;
     justify-content: center;
-    width: clamp(250px, 40vw, 550px);
+    width: clamp(150px, 40vw, 550px);
     height: auto;    
 }
 
@@ -471,9 +471,17 @@ header.abajo{
 
 /* Medias Querys */
 @media (max-width: 1500px) {
+    /* Seccion 2 */
+    .seccion_2__Content{
+        width: 87%;
+    }
     .card{
         height: 450px;
     }
+    .card__Title, .card__Title--modif{
+        height: 5vh;
+    }
+
 }
 
 @media (max-width: 1300px) {
@@ -568,6 +576,7 @@ header.abajo{
         display: flex;
     }
     .seccion_1__Text{
+        /* text-align: center; */
         width: 80vw;
         font-size: clamp(14px, 3vw, 30px);
         text-align: justify;
@@ -584,6 +593,7 @@ header.abajo{
     }
     /* Seccion 2 */
     .seccion_2__Content{
+        background-color: rebeccapurple;
         width: 70%;
         gap: 2vh;
     }
