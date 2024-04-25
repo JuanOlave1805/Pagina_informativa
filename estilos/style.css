@@ -32,7 +32,7 @@ body{
 
 /* Header encabezado */
 header{
-    z-index: 1;
+    position: fixed;
     transition: ease .5s;
 }
 .abajo{
@@ -46,6 +46,7 @@ header{
     position: fixed;
     width: 100%;
     height: auto;
+    z-index: 2;
 }
 
 /* Contenedor del header */
@@ -76,6 +77,8 @@ header.abajo{
     color: var(--text);
     transition: ease .5s;
     display: block;
+    position: relative;
+    z-index: 10;
 }
 
 /* Logo */
@@ -128,7 +131,7 @@ header.abajo{
 .seccion_1__Title{
     font-size: clamp(25px, 4vw, 60px);
     width: 80%;
-    font-weight: 800;
+    font-weight: 900;
     color: var(--fondo_primary);
 }
 
@@ -179,17 +182,20 @@ header.abajo{
 
 /* Seccion 2 */
 .seccion_2{
-    position: relative;
-    height: auto;
+    /* height: auto;
     width: 100%;
     display: flex;
     align-items: center; 
     flex-direction: column;
-    padding: 0px 0px 100px 0px;
+    padding: 0px 0px 100px 0px; */
+    width: 100%;
     background-color: var(--fondo_1);
+    position: relative;
 }
 .seccion_2--modif{
     background-color: var(--white);
+    width: 100%;
+    position: relative;
 }
 
 /* Clase del contenedor dentro de la seccion 2 */
@@ -199,7 +205,7 @@ header.abajo{
     gap: 50px;
     width: 100%;
     height: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
 }
 
 /* Titulo principal de la Seccion */
@@ -209,106 +215,134 @@ header.abajo{
     height: auto;
     width: 100%;
     margin-bottom: 120px;
-    font-size: clamp(24px, 4vw, 60px);
+    font-size: clamp(24px, 4vw, 50px);
     color: var(--fondo_primary);
     font: bold;
     position: absolute;
-    top: 3vh;
+    top: .5vh;
+
 }
 
-/* Card */
-.card{
-    flex-basis: 400px;
+
+/* Slider */
+.swiper {
+    width: 87%;
+    height: 50%;  
     position: relative;
-    height: 500px;
-    width: 100%;
-    cursor: pointer;
-    
-} 
-/* Frontal */
-.card__Face{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: .5s;
+    z-index: 1; /* Asegura que el slider esté detrás del banner */
+    margin: 50px 0px;
 }
-.card__Front{
-    transform: perspective(600px) rotate(0deg);
-    box-shadow: 0 5px 10px var(--black);
+.color_fondo{
+    background-color: var(--fondo_1);
+    width: 100%;
 }
-.card__Image{
-    position: absolute;
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px 44px;
+    position: relative;
+    z-index: 0;
+}
+
+.swiper-slide img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.card{
+      position: relative;
+      height: 400px;
+      width: 100%;
+      cursor: pointer;
+} 
+  /* Frontal */
+.card__Face{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: .5s;
+}
+.card__Front{
+      transform: perspective(600px) rotate(0deg);
+      box-shadow: 0 5px 10px var(--black);
+}
+.card__Image{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
 .card__Title{
-    display: flex;
-    height: 12vh;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0px;
-    font-size: clamp(15px, 2vw, 20px);
-    padding: 10px;
-    width: 100%;
-    color: var(--fondo_primary);
-    background: var(--text);
-    border-radius: 10px;
+      display: flex;
+      height: 10vh;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0px;
+      font-size: clamp(14px, 2vw, 17px);
+      padding: 10px;
+      width: 100%;
+      color: var(--fondo_primary);
+      background: var(--text);
+      border-radius: 10px;
 }
 /* Trasera */
 .card__Back{
-    transform:perspective(600px) rotateY(180deg);
-    padding: 5px;
-    color: var(--fondo_primary);
-    background: var(--text);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    box-shadow: 0 5px 10px black;
+      transform:perspective(600px) rotateY(180deg);
+      padding: 5px;
+      color: var(--fondo_primary);
+      background: var(--text);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+      box-shadow: 0 5px 10px black;
 }
 .card__Title--modif{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin: 10px 0px;
-    font-size: clamp(15px, 3vw, 24px);
-    color: var(--fondo_primary);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin: 10px 0px;
+      font-size: clamp(15px, 3vw, 22px);
+      color: var(--fondo_primary);
 }
 .card__Link{
-    border-top: solid 1px var(--fondo_primary);
-    height: 50px;
-    line-height: 50px;
+      border-top: solid 1px var(--fondo_primary);
+      height: 50px;
+      line-height: 50px;
 }
 .card__Link a{
-    color: var(--fondo_primary);
-    text-decoration:dotted;  
-    font-size:clamp(18px, 3vw, 24px);
+      color: var(--fondo_primary);
+      text-decoration:dotted;  
+      font-size:clamp(16px, 3vw, 21px); 
 }
 .card__Text{
-    letter-spacing: 1px;
-    font-size: clamp(13px, 2vw, 18px);
-    text-align: left;
-    overflow:overlay;
-    margin: 10px;
+      letter-spacing: 1px;
+      font-size: clamp(13px, 2vw, 16px);
+      text-align: left;
+      overflow:overlay;
+      margin: 10px;
 }
-
+  
 /* Giro de las cards */
 .card.flipped .card__Front {
-    transform: perspective(600px) rotateY(180deg);
-    cursor: pointer;
-  }
-  
-  .card.flipped .card__Back {
-    transform: perspective(600px) rotateY(360deg);
-  }
-  
+      transform: perspective(600px) rotateY(180deg);
+      cursor: pointer;
+}
+    
+.card.flipped .card__Back {
+      transform: perspective(600px) rotateY(360deg);
+}
 
 
 /* Clase de los links en la pagina de la Seccion 2 y 3 */
@@ -582,9 +616,12 @@ header.abajo{
         padding-bottom: 20px;
     }
     /* Seccion 2 */
-    .seccion_2__Content{
+    /* .seccion_2__Content{
         width: 70%;
         gap: 2vh;
+    } */
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
     }
     .card{
         height: 40vh;

@@ -15,9 +15,7 @@ window.addEventListener("scroll", function(){
 //NOTA: Todo se ejecuta a la vez
 
 
-
-
-
+// Giro card
 document.addEventListener("DOMContentLoaded", function () {
   // Obtén todas las tarjetas por su clase o cualquier otro selector
   var cards = document.querySelectorAll(".card");
@@ -29,4 +27,37 @@ document.addEventListener("DOMContentLoaded", function () {
       card.classList.toggle("flipped");
     });
   });
+});   
+
+
+// Slider
+let slidesToShow = 4; // Por defecto, muestra 4 slides por vista
+
+if (window.matchMedia("(max-width: 800px)").matches) {
+    slidesToShow = 1;
+} else if (window.matchMedia("(max-width: 1020px)").matches) {
+    slidesToShow = 2;
+} else if (window.matchMedia("(max-width: 1500px)").matches) {
+    slidesToShow = 3;
+} else {
+    slidesToShow = 4;
+}
+
+let swiper = new Swiper(".mySwiper", {
+    slidesPerView: slidesToShow, // Utiliza la variable para definir slidesPerView
+    
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+    touchMoveStopPropagation: true,
 });
+
