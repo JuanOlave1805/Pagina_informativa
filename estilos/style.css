@@ -313,7 +313,7 @@ header.abajo{
       width: 100%;
       height: auto;
       margin: 10px 0px;
-      font-size: clamp(15px, 3vw, 22px);
+      font-size: clamp(15px, 3vw, 17px);
       color: var(--fondo_primary);
 }
 .card__Link{
