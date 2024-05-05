@@ -55,7 +55,7 @@ let swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: true,
     },
     touchMoveStopPropagation: true,

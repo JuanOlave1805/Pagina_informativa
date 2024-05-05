@@ -148,13 +148,13 @@ header.abajo{
     height: 44px;
     width: auto;
     padding: 0px 24px 0px 24px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     margin-top: 20px;
     transition: all 0.3s;
     color: var(--fondo_primary);
     transition: ease .5s;
-    border: solid var(--fondo_primary) 1px;
+    border: solid var(--fondo_primary) .5px;
 }
 .seccion_1__Button a{
     height: 100%;
@@ -432,10 +432,14 @@ header.abajo{
     margin-top: 20px;
     cursor: pointer;
     transition: all 0.3s ease 0s;;
+    border: none;
 }
 .seccion_3__Botton:hover{
     text-align: center;
-    transform: scale(1.1)
+    transform: scale(1.1);
+    background: var(--text);
+    color: var(--fondo_primary);
+    border: solid .5px var(--fondo_primary);
 }
 .seccion_3__Box{
     height: 100%;
