@@ -196,6 +196,7 @@ header.abajo{
     background-color: var(--white);
     width: 100%;
     position: relative;
+    height: 100%;
 }
 
 /* Clase del contenedor dentro de la seccion 2 */
@@ -226,7 +227,7 @@ header.abajo{
 
 /* Slider */
 .swiper {
-    width: 87%;
+    width: 85%;
     height: 50%;  
     position: relative;
     z-index: 1; /* Asegura que el slider esté detrás del banner */
@@ -287,7 +288,7 @@ header.abajo{
       align-items: center;
       position: absolute;
       bottom: 0px;
-      font-size: clamp(14px, 2vw, 17px);
+      font-size: clamp(12px, 3vw, 17px);
       padding: 10px;
       width: 100%;
       color: var(--fondo_primary);
@@ -313,7 +314,7 @@ header.abajo{
       width: 100%;
       height: auto;
       margin: 10px 0px;
-      font-size: clamp(15px, 3vw, 17px);
+      font-size: clamp(12px, 3vw, 17px);
       color: var(--fondo_primary);
 }
 .card__Link{
@@ -324,11 +325,11 @@ header.abajo{
 .card__Link a{
       color: var(--fondo_primary);
       text-decoration:dotted;  
-      font-size:clamp(16px, 3vw, 21px); 
+      font-size:clamp(14px, 3vw, 21px); 
 }
 .card__Text{
       letter-spacing: 1px;
-      font-size: clamp(13px, 2vw, 16px);
+      font-size: clamp(10px, 2vw, 16px);
       text-align: left;
       overflow:overlay;
       margin: 10px;
@@ -508,6 +509,9 @@ header.abajo{
     .seccion_2__Content{
         width: 87%;
     }
+    .swiper{
+        width: 90%;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -516,6 +520,11 @@ header.abajo{
         width: 20vw;
     }
     /* Seccion 2 */
+    /* Slider */
+    .swiper{
+        width: 100%;
+        margin-bottom: 7px;
+    }
     /* links seccion 2 */
     .links{
         height: 100px;
@@ -545,6 +554,18 @@ header.abajo{
     .seccion_2__Title-Primary{
         margin: 0;
     }
+
+    /* Slider */
+    .swiper-slide{
+        padding: 10px 10px 45px ;
+    }
+
+    .swiper-button-next{ 
+        display: none !important; 
+    } .swiper-button-prev {
+        display: none !important; /* Usamos !important para asegurarnos de que esta regla tenga prioridad */
+    }
+
     /* Seccion 3 */
     .seccion_3__Text{
         display: flex;
@@ -620,9 +641,10 @@ header.abajo{
         width: 70%;
         gap: 2vh;
     } */
-    .swiper-button-next, .swiper-button-prev{
-        display: none;
-    }
+
+    
+
+    /* Card modificada */
     .card{
         height: 40vh;
     }
@@ -670,10 +692,11 @@ header.abajo{
     }
 
     /* Seccion 2 */
-    .seccion_2__Content{
+    /* .seccion_2__Content{
         grid-template-columns: 1fr;
         width: 80%;
-    }
+        background-color: rebeccapurple;
+    } */
 
     .card__Title{
         padding: 10px;

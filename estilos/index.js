@@ -35,7 +35,7 @@ let slidesToShow = 4; // Por defecto, muestra 4 slides por vista
 
 if (window.matchMedia("(max-width: 800px)").matches) {
     slidesToShow = 1;
-} else if (window.matchMedia("(max-width: 1020px)").matches) {
+} else if (window.matchMedia("(max-width: 1160px)").matches) {
     slidesToShow = 2;
 } else if (window.matchMedia("(max-width: 1500px)").matches) {
     slidesToShow = 3;
