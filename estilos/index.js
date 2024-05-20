@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
 // Slider
 let slidesToShow = 4; // Por defecto, muestra 4 slides por vista
 
-if (window.matchMedia("(max-width: 800px)").matches) {
+if (window.matchMedia("(max-width: 700px)").matches) {
     slidesToShow = 1;
-} else if (window.matchMedia("(max-width: 1160px)").matches) {
+} else if (window.matchMedia("(max-width: 1230px)").matches) {
     slidesToShow = 2;
-} else if (window.matchMedia("(max-width: 1500px)").matches) {
+} else if (window.matchMedia("(max-width: 1750px)").matches) {
     slidesToShow = 3;
 } else {
     slidesToShow = 4;

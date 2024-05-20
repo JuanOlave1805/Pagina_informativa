@@ -227,11 +227,11 @@ header.abajo{
 
 /* Slider */
 .swiper {
-    width: 85%;
-    height: 50%;  
+    width: 85vw;
+    height: 60vh;  
     position: relative;
     z-index: 1; /* Asegura que el slider esté detrás del banner */
-    margin: 50px 0px;
+    margin: 50px 0px 10px;
 }
 .color_fondo{
     background-color: var(--fondo_1);
@@ -243,7 +243,7 @@ header.abajo{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 50px 44px;
+    padding: 25px 50px 0px;
     position: relative;
     z-index: 0;
 }
@@ -257,7 +257,7 @@ header.abajo{
 
 .card{
       position: relative;
-      height: 400px;
+      height: 87%;
       width: 100%;
       cursor: pointer;
 } 
@@ -288,7 +288,7 @@ header.abajo{
       align-items: center;
       position: absolute;
       bottom: 0px;
-      font-size: clamp(12px, 3vw, 17px);
+      font-size: clamp(13px, 3vh, 18px);
       padding: 10px;
       width: 100%;
       color: var(--fondo_primary);
@@ -314,7 +314,7 @@ header.abajo{
       width: 100%;
       height: auto;
       margin: 10px 0px;
-      font-size: clamp(12px, 3vw, 17px);
+      font-size: clamp(13px, 3vh, 18px);
       color: var(--fondo_primary);
 }
 .card__Link{
@@ -329,7 +329,7 @@ header.abajo{
 }
 .card__Text{
       letter-spacing: 1px;
-      font-size: clamp(10px, 2vw, 16px);
+      font-size: clamp(12px, 3vw, 16px);
       text-align: left;
       overflow:overlay;
       margin: 10px;
@@ -559,14 +559,17 @@ header.abajo{
     }
 
     /* Slider */
+    .swiper{
+        height: 60vh;
+    }
     .swiper-slide{
-        padding: 10px 10px 45px ;
+        padding: 10px 10px  ;
     }
 
     .swiper-button-next{ 
         display: none !important; 
     } .swiper-button-prev {
-        display: none !important; /* Usamos !important para asegurarnos de que esta regla tenga prioridad */
+        display: none !important; /* Se usa !important para asegurarnos de que esta regla tenga prioridad */
     }
 
     /* Seccion 3 */
@@ -648,11 +651,9 @@ header.abajo{
     
 
     /* Card modificada */
-    .card{
-        height: 40vh;
-    }
     .card__Title, .card__Title--modif{
         height: 8vh;
+        font-size: clamp(13px, 2vh, 18px);
     }
     .card__Text{
         text-align: justify;
@@ -716,10 +717,7 @@ header.abajo{
     .seccion_1{
         padding: 0px;
     }
-    /* Seccion 2 */
-    .card{
-      height: 28vh;
-    }
+
     /* Seccion 3 */
     .seccion_3__Text{
         width: 100%;
