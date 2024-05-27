@@ -651,9 +651,13 @@ header.abajo{
     
 
     /* Card modificada */
-    .card__Title, .card__Title--modif{
+    .card__Title{
+        height: 10vh;
+        font-size: clamp(10px, 4vw, 18px);
+    }
+    .card__Title--modif{
         height: 8vh;
-        font-size: clamp(13px, 2vh, 18px);
+        font-size: clamp(8px, 2vh, 18px);
     }
     .card__Text{
         text-align: justify;
