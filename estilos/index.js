@@ -43,6 +43,7 @@ if (window.matchMedia("(max-width: 700px)").matches) {
     slidesToShow = 4;
 }
 
+// Botones del slider 
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: slidesToShow, // Utiliza la variable para definir slidesPerView
     
@@ -61,3 +62,21 @@ let swiper = new Swiper(".mySwiper", {
     touchMoveStopPropagation: true,
 });
 
+
+// Contador en vivo
+// Verificamos si hay un registro de visitas en localStorage
+let visitas = localStorage.getItem('contador visitas');
+
+// Si no hay registro, iniciamos el contador en cero
+if(!visitas){
+  visitas = 0;
+}
+
+// Incrementamos el contador de visitas
+visitas++;
+
+// Guardamos el nuevo valor del contador en LocalStorage
+localStorage.setItem('contador_visitas', visitas);
+
+// Actualizamos el contenido en el elemento HTML con el contador de visitas
+document.getElementById('contador').textContent = visitas
