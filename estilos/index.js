@@ -31,27 +31,77 @@ document.addEventListener("DOMContentLoaded", function () {
 });   
 
 
+// Slider
+let slidesToShow = 4; // Por defecto, muestra 4 slides por vista
 
+// if (window.matchMedia("(max-width: 700px)").matches) {
+//     slidesToShow = 1;
+// } else if (window.matchMedia("(max-width: 1230px)").matches) {
+//     slidesToShow = 2;
+// } else if (window.matchMedia("(max-width: 1750px)").matches) {
+//     slidesToShow = 3;
+// } else {
+//     slidesToShow = 4;
+// }
 
-// Botones del slider 
-let swiper = new Swiper(".mySwiper", {
-    slidesPerView: slidesToShow, // Utiliza la variable para definir slidesPerView
+// if (window.matchMedia("(min-width: 1750px)").matches) {
+//     slidesToShow = 4;
+// } else if (window.matchMedia("(min-width: 1230px)").matches) {
+//     slidesToShow = 3;
+// } else if (window.matchMedia("(min-width: 750px)").matches) {
+//     slidesToShow = 2;
+// } else {
+//     slidesToShow = 1;
+// }
+
+// // Botones del slider 
+// let swiper = new Swiper(".mySwiper", {
+//     slidesPerView: slidesToShow, // Utiliza la variable para definir slidesPerView
     
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: true,
-    },
-    touchMoveStopPropagation: true,
-});
+//     pagination: {
+//       el: ".swiper-pagination",
+//       type: "fraction",
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//     autoplay: {
+//         delay: 3500,
+//         disableOnInteraction: true,
+//     },
+//     touchMoveStopPropagation: true,
+// });
+document.addEventListener("DOMContentLoaded", function() {
+    let slidesToShow;
 
+    if (window.matchMedia("(min-width: 1750px)").matches) {
+        slidesToShow = 4;
+    } else if (window.matchMedia("(min-width: 1230px)").matches) {
+        slidesToShow = 3;
+    } else if (window.matchMedia("(min-width: 750px)").matches) {
+        slidesToShow = 2;
+    } else {
+        slidesToShow = 1;
+    }
+
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: slidesToShow,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: true,
+        },
+        touchMoveStopPropagation: true,
+    });
+});
 
 
 
@@ -105,7 +155,6 @@ data.map((obj) => {
   $card_paragraph.classList.add("card__Text");
   $card_link.classList.add("card__Link");
 
-
   
 
 
@@ -129,16 +178,3 @@ data.map((obj) => {
 
 $contenedor.appendChild($fragmen);
 
-
-// Slider
-let slidesToShow = 4; // Por defecto, muestra 4 slides por vista
-
-if (window.matchMedia("(max-width: 700px)").matches) {
-    slidesToShow = 1;
-} else if (window.matchMedia("(max-width: 1230px)").matches) {
-    slidesToShow = 2;
-} else if (window.matchMedia("(max-width: 1750px)").matches) {
-    slidesToShow = 3;
-} else {
-    slidesToShow = 4;
-}
