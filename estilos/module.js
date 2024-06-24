@@ -1,7 +1,7 @@
 export const data = [
   {
     titulo: "5 funciones interesantes de Chrome DevTools que la mayoría de los desarrolladores no conocen",
-    img: "/Img noticias/noticias mundo/chrome.jpg",
+    img: "Img noticias/noticias mundo/chrome.jpg",
     paragraph: "Descubre cómo maximizar Chrome DevTools más allá de sus funciones básicas con estas características avanzadas y menos conocidas. Desde observar valores variables en tiempo real hasta puntos de interrupción condicionales y registros conservados, estas herramientas te permiten depurar más rápido y optimizar el rendimiento de tu sitio web de manera efectiva. Aprende a utilizar estas funciones para mejorar tu flujo de trabajo y aumentar tu productividad como desarrollador. No te pierdas las gemas ocultas de Chrome DevTools que pueden transformar tu experiencia de desarrollo.",
     url: "https://javascript.plainenglish.io/5-cool-chrome-devtools-features-most-developers-dont-know-about-cf55d3b46c95"
   },
