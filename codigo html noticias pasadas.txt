@@ -1,6 +1,557 @@
 
 Noticias mundo pasadas 
 
+
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/45 noticia.jpeg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  AI Agents o Agentes de IA: qué son, componentes y qué tipos existen en la inteligencia artificial
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  AI Agents o Agentes de IA: qué son, componentes y qué tipos existen en la inteligencia artificial
+                </h3>
+                <p class="card__Text">
+                  Descubre los fascinantes AI Agents, la vanguardia de la inteligencia artificial que está transformando la manera en que interactuamos con la tecnología. Desde coches autónomos hasta sistemas de atención al cliente, estos programas autónomos están diseñados para percibir su entorno y tomar decisiones inteligentes. Te explicamos de forma clara y accesible cómo funcionan, sus componentes esenciales como sensores y actuadores, y los diferentes tipos, desde los más simples hasta los más complejos, que abarcan desde respuestas automáticas hasta aprendizaje continuo. ¡Sumérgete en el futuro de la IA y descubre cómo estos agentes están moldeando nuestro mundo!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/basics/ai-agents-agentes-ia-que-componentes-que-tipos-existen-inteligencia-artificial" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/44 noticia.jpeg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  Desbloqueando el Potencial de la IA: Quintuplica la Productividad y Aumenta un 25% los Salarios
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  Desbloqueando el Potencial de la IA: Quintuplica la Productividad y Aumenta un 25% los Salarios
+                </h3>
+                <p class="card__Text">
+                  ¡Descubre el impacto de la inteligencia artificial en el empleo! Mientras que la IA genera temores sobre la eliminación de trabajos, un estudio revela que las empresas que la utilizan han quintuplicado su productividad y los empleados con habilidades en IA han aumentado sus salarios en un 25%. Conoce cómo la demanda de profesionales en IA está creciendo y cómo esto podría beneficiar a tu carrera. Además, descubre las oportunidades que ofrece la IA para mejorar la productividad y superar la escasez de mano de obra en diversos sectores. ¡Lee la noticia completa para obtener más información sobre el impacto transformador de la IA en el mercado laboral!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/robotica-e-ia/esta-ver-ia-eliminara-empleos-entonces-quintuplica-productividad-e-incrementa-25-salarios" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/43 noticia.png" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  ¡Alerta! Protege tus compras en Temu y AliExpress: Descubre las Modalidades de Robo en Plataformas de Compras Online
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  ¡Alerta! Protege tus compras en Temu y AliExpress: Descubre las Modalidades de Robo en Plataformas de Compras Online
+                </h3>
+                <p class="card__Text">
+                  ¡Protege tus compras en línea! Plataformas como Temu y AliExpress han ganado popularidad en Colombia, pero también son blanco de estafadores cibernéticos. Temu ha alertado a sus usuarios sobre posibles estafas, incluyendo mensajes de spam que solicitan pagos adicionales para completar envíos o falsos vendedores que piden pagos fuera de la plataforma. Además, los ladrones pueden aprovecharse de la necesidad de trabajo de las personas para obtener información personal. Descubre cómo protegerte con estos consejos útiles y evita ser víctima de fraudes al realizar tus compras en línea.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com.co/aplicaciones/usas-temu-aliexpress-pilas-estas-modalidades-robo-plataformas-compras-virtuales" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/42 noticia.jpg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  ¡Protege tus llamadas! La popular app que desenmascara estafas ahora se fortalece para confundir a los delincuentes
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  ¡Protege tus llamadas! La popular app que desenmascara estafas ahora se fortalece para confundir a los delincuentes
+                </h3>
+                <p class="card__Text">
+                  Truecaller y Microsoft se unen para ofrecer una innovadora herramienta que permite a los usuarios crear versiones digitales de su voz con inteligencia artificial (IA) para responder llamadas automáticamente. La colaboración entre ambas compañías introduce la tecnología Personal Voice de Azure AI Speech en la popular aplicación de identificación de llamadas Truecaller. Esta nueva función, presentada en el Microsoft Build 2024, permite a los usuarios grabar su voz y generar una versión digital para utilizarla en el asistente de Truecaller. De esta manera, cuando el asistente responda llamadas automáticamente, podrá hacerlo con la voz del usuario, mejorando así la experiencia de los usuarios con el servicio. Descubre más sobre esta emocionante colaboración y cómo puedes personalizar tus respuestas automáticas leyendo la noticia completa.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.semana.com/tecnologia/articulo/popular-app-que-expone-llamadas-de-estafa-recibe-potente-mejora-para-despistar-a-los-delincuentes/202412/" target="_blank" rel="Semana" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/27 noticia.png" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  Estudio Revela: ChatGPT Falla en el 52% de las Preguntas de Programación
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  Estudio Revela: ChatGPT Falla en el 52% de las Preguntas de Programación
+                </h3>
+                <p class="card__Text">
+                  Descubre los sorprendentes hallazgos de un estudio de la Universidad Purdue sobre ChatGPT de OpenAI! Aunque este chatbot ofrece respuestas detalladas el 77% del tiempo, se revela que responde incorrectamente al 52% de las preguntas de programación. A pesar de ello, los usuarios aún prefieren sus respuestas el 35% del tiempo. Este estudio plantea importantes cuestiones sobre la confiabilidad de la inteligencia artificial en aplicaciones prácticas. ¡Lee el artículo completo para conocer más sobre este fascinante tema y las implicaciones futuras para la tecnología
+                </p>
+                <div class="card__Link">
+                  <a href="https://es.gizmodo.com/chatgpt-respuestas-programacion-incorrecta-estudio-open-1851499739" target="_blank" rel="Gizmodo" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/40 noticia.png" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  MSI Revoluciona la Experiencia Portátil: Inteligencia Artificial Integrada en el Nuevo Cyborg 15 AI
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  MSI Revoluciona la Experiencia Portátil: Inteligencia Artificial Integrada en el Nuevo Cyborg 15 AI
+                </h3>
+                <p class="card__Text">
+                  En la era dorada de la IA, MSI presenta el revolucionario Cyborg 15 AI, un portátil que combina estilo, potencia e inteligencia artificial para ofrecer una experiencia sin precedentes. Equipado con el procesador Intel 4 'Meteor Lake' y el avanzado MSI AI Engine, este portátil ajusta automáticamente el rendimiento, sonido y visuales según tus necesidades. Además, su diseño semitranslúcido con teclado RGB y pantalla LED FHD de 16,5 pulgadas garantiza imágenes nítidas y una experiencia de uso excepcional. Perfecto para gamers y creadores, el Cyborg 15 AI promete llevar tu productividad y entretenimiento al siguiente nivel. ¡Lee la noticia completa y descubre más!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com.co/computadores/msi-incorpora-inteligencia-artificial-su-cyborg-15-ai-para-ofrecer-nueva-clase-experiencia-portatil" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/39 noticia.jpeg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  ¡Windows 11 se reinventa con Copilot+! Qualcomm lidera el camino, ¿qué traerán Intel y AMD al frente de la batalla?
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  ¡Windows 11 se reinventa con Copilot+! Qualcomm lidera el camino, ¿qué traerán Intel y AMD al frente de la batalla?
+                </h3>
+                <p class="card__Text">
+                  Los portátiles con Windows 11 y Copilot+ están a punto de llegar, y Acer, ASUS, Dell, HP, Lenovo y Samsung lideran el camino junto con Qualcomm. ¿Qué hace especial a estos dispositivos? Dos palabras: Copilot+ e inteligencia artificial. Los SoC de Qualcomm, Snapdragon X Elite y Snapdragon X Plus, equipados con una poderosa NPU, prometen un rendimiento excepcional de hasta 45 TOPS. Sin embargo, Intel y AMD también están en la carrera con sus propios SoC equipados con NPUs, aunque aún están ajustando sus especificaciones para satisfacer los requisitos de Microsoft. ¡Descubre qué nos depara el futuro con la próxima generación de portátiles!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/componentes/qualcomm-solo-primer-paso-windows-11-copilot-chips-intel-amd-esperan-retaguardia" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/38 noticia" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  ¡El Fin de una Era! PC Copilot+ y el Cambio Radical en la Dominación de x86 en Nuestros PCs
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  ¡El Fin de una Era! PC Copilot+ y el Cambio Radical en la Dominación de x86 en Nuestros PCs
+                </h3>
+                <p class="card__Text">
+                  ¡El futuro de los PCs está aquí! Descubre cómo la arquitectura ARM desafía a Intel y AMD en el mundo Windows, siguiendo los pasos de Apple con sus revolucionarios chips M1. Además, con los nuevos PCs Copilot+ de Microsoft, impulsados por los potentes chips Snapdragon X Elite/Plus de Qualcomm, disfrutarás de una eficiencia energética incomparable y un rendimiento extraordinario. Prepárate para una nueva era de computación con inteligencia artificial integrada y un cambio de paradigma en el mundo de los portátiles y PCs.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/ordenadores/llevamos-cuatro-decadas-dominio-x86-nuestros-pcs-pc-copilot-basados-chips-arm-punto-inflexion" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/37 noticia.jpeg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  ¡El Sueño de Microsoft: PCs Copilot+, la Competencia de MacBook Air!
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  ¡El Sueño de Microsoft: PCs Copilot+, la Competencia de MacBook Air!
+                </h3>
+                <p class="card__Text">
+                  ¡Descubre el desafío de Microsoft contra el MacBook Air con sus nuevos PCs Copilot+! Desde la legendaria serie Surface hasta los intentos pasados con la Surface RT y Pro X, Microsoft ha buscado durante años su propio portátil emblemático en el mundo Windows. Ahora, con los PCs Copilot+ basados en ARM, prometen una fórmula convincente para competir con el MacBook Air. Con un rendimiento mejorado, autonomía superior y capacidades de inteligencia artificial, Microsoft apunta alto. Sin embargo, ¿cumplirán sus promesas en el mundo real? Sumérgete en esta emocionante historia de innovación y competencia para descubrirlo.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/ordenadores/microsoft-persigue-sueno-tener-su-propio-macbook-air-pcs-copilot-intento-convincente-que-recordamos" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/36 noticia.png" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  ¡Potencia tu Trabajo con la IA de Microsoft! Descubre Cómo Transformar tu Labor
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  ¡Potencia tu Trabajo con la IA de Microsoft! Descubre Cómo Transformar tu Labor
+                </h3>
+                <p class="card__Text">
+                  ¡Desata el poder de la IA con Microsoft 365! Descubre cómo Copilot, disponible en Word, PowerPoint, Excel y más, te ayuda a ser más productivo con funciones como Designer y Editor. Con la IA integrada, podrás crear documentos y presentaciones de manera más eficiente y obtener información relevante rápidamente. Sin embargo, es importante tener en cuenta las limitaciones y posibles sesgos de la IA. Explora este fascinante mundo tecnológico con precaución y maximiza tu productividad con Microsoft.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com.co/robotica-e-ia/como-utilizar-ia-microsoft-para-transformar-tu-trabajo" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/35 noticia.png" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  Lo bueno y lo malo de GPT-4o; ¿Deberia preocuparnos?
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  Lo bueno y lo malo de GPT-4o; ¿Deberia preocuparnos?
+                </h3>
+                <p class="card__Text">
+                  ¡Bienvenidos al futuro con GPT-4o de OpenAI! Esta nueva versión del modelo de inteligencia artificial promete revolucionar la forma en que interactuamos con las máquinas. Con mejoras en audio, texto e imagen, ofrece un asistente capaz de entender el lenguaje natural y ejecutar órdenes con precisión. Desde resolver problemas matemáticos hasta servir como traductor en tiempo real, las posibilidades son infinitas. Sin embargo, también plantea desafíos en cuanto a derechos de autor, privacidad de datos y posibles sesgos en las respuestas. Descubre cómo esta innovación puede transformar múltiples sectores mientras abordamos sus desafíos de manera responsable y ética. ¡No te pierdas esta mirada al futuro de la inteligencia artificial!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com.co/robotica-e-ia/deberia-preocuparnos-gpt-4o-bueno-malo-esta-inteligencia-artificial" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/34 noticia.jpeg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  ¡Revolution! Copilot+PC: La Inteligencia llega a las PCs con Windows
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  ¡Revolution! Copilot+PC: La Inteligencia llega a las PCs con Windows
+                </h3>
+                <p class="card__Text">
+                  ¡Descubre el futuro con las Copilot+PC de Microsoft! Estas nuevas PCs con Windows prometen un rendimiento y una inteligencia sin precedentes. Equipadas con procesadores potentes y acceso a la última tecnología de IA, ofrecen tiempos de arranque instantáneos y una experiencia de juego excepcional. Además, con el asistente Copilot integrado, se adaptan a tus necesidades y maximizan la productividad. ¡No te pierdas este avance tecnológico que cambiará la forma en que interactúas con tu PC!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com.co/robotica-e-ia/microsoft-presenta-copilot-pc-pc-windows-inteligentes-jamas-construidas" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/33 noticia.jpg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  ¡Cuidado, programadores! Evita errores con ChatGPT en desarrollo de software
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  ¡Cuidado, programadores! Evita errores con ChatGPT en desarrollo de software
+                </h3>
+                <p class="card__Text">
+                  ¡Atención desarrolladores! Un estudio revela que las respuestas de ChatGPT sobre programación son deficientes y poco confiables. ¡Descubre por qué el 52% de las respuestas contienen errores y cómo esto afecta tu trabajo! Desde problemas de contexto hasta falta de actualización, el chatbot puede ser engañoso. Aunque ofrece accesibilidad, la alta tasa de errores plantea riesgos. ¿Está Stack Overflow obsoleto? Averigua cómo mitigar estos problemas y cómo mejorar la precisión de ChatGPT. ¡No te pierdas esta importante información para garantizar la calidad de tu trabajo como programador!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.enter.co/especiales/dev/ojo-programadores-chatgpt-falla-en-respuestas-sobre-desarrollo-de-software-como-identificarlas/" target="_blank" rel="Enter.co" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/32 noticia.jpeg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  Microsoft Lanza Copilot+: La IA Revolucionaria que Debutará en Ordenadores con Denominación Propia
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  Microsoft Lanza Copilot+: La IA Revolucionaria que Debutará en Ordenadores con Denominación Propia
+                </h3>
+                <p class="card__Text">
+                  ¡Descubre el futuro con Copilot+ de Microsoft! Estos avanzados PCs con Windows, impulsados por Qualcomm, están listos para transformar tu experiencia digital. La próxima actualización de Windows 11 traerá funciones basadas en IA exclusivas para los dispositivos Copilot+. Desde Recall hasta la traducción en vivo de subtítulos, estas capacidades te dejarán asombrado. ¡Actualízate con Copilot+ y lleva tu productividad al siguiente nivel!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/ordenadores/microsoft-presenta-copilot-ia-que-llega-a-windows-tendra-ordenadores-su-propia-denominacion" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/31 noticia.jpeg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                    La Descomposición Digital: El Asombroso 38% de los Sitios Web de 2013 que Han Desaparecido del Internet
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                    La Descomposición Digital: El Asombroso 38% de los Sitios Web de 2013 que Han Desaparecido del Internet
+                </h3>
+                <p class="card__Text">
+                  Un estudio reciente del Pew Research Center revela una alarmante realidad: el 38% de los sitios web que existían en 2013 han desaparecido. Este fenómeno, conocido como "descomposición digital", demuestra cómo millones de páginas web dejan de estar disponibles con el tiempo. Además, se encontró que el 23% de los sitios actuales contienen al menos un enlace roto, afectando incluso a fuentes confiables como Wikipedia. Redes sociales como Twitter también sufren, con un 18% de tuits desaparecidos. Mientras tanto, el Internet Archive lucha por preservar estos contenidos, aunque la tarea parece inabarcable. ¡Descubre más sobre esta crisis digital!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/servicios/descomposicion-digital-como-38-sitios-web-que-existian-2013-han-desaparecido-internet" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/30 noticia.png" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                    Google I/O 2024: todas las novedades sobre Gemini, Android 15 y sus grandes avances en IA
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                    Google I/O 2024: todas las novedades sobre Gemini, Android 15 y sus grandes avances en IA
+                </h3>
+                <p class="card__Text">
+                  ¡Descubre las emocionantes novedades del Google I/O 2024! Este evento clave nos ofrece una visión del futuro de la inteligencia artificial con la familia Gemini, incluyendo el modelo ligero Gemini Flash y la potente actualización Gemini 1.5 Pro. Además, conoce Project Astra, el ambicioso proyecto de Google para desarrollar un asistente IA universal. Sumérgete en las mejoras de la Búsqueda de Google, las innovaciones en Android 15 y las emocionantes actualizaciones en WearOS y Android TV. No te pierdas esta emocionante mirada al futuro de la tecnología con Google.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/robotica-e-ia/google-i-2024-todas-novedades-gemini-android-15-sus-grandes-avances-ia" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/29 noticia.png" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                    Reddit ya se alió con Google para su IA. Ahora ha hecho lo mismo con OpenAI
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                    Reddit ya se alió con Google para su IA. Ahora ha hecho lo mismo con OpenAI
+                </h3>
+                <p class="card__Text">
+                  ¡La revolución de los chatbots de IA está aquí y OpenAI lidera el camino! Descubre cómo este gigante ha sellado un acuerdo con Reddit para acceder a millones de publicaciones en tiempo real. Esta asociación promete ofrecer información actualizada y debates candentes a través de ChatGPT y otros productos futuros. Además, OpenAI proporcionará sus avanzados modelos de lenguaje a Reddit para potenciar funciones de IA. Sumérgete en este emocionante avance tecnológico y conoce cómo está cambiando la forma en que consumimos información en línea.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/empresas-y-economia/reddit-se-alio-google-para-alimentar-su-ia-ahora-ha-hecho-openai" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/28 noticia.png" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                    ¿Se pueden embargar las cuentas de Nequi, Daviplata y otros como anunció Air-e?
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                    ¿Se pueden embargar las cuentas de Nequi, Daviplata y otros como anunció Air-e?
+                </h3>
+                <p class="card__Text">
+                  ¡Air-e revoluciona el mundo financiero con su nuevo método de cobro! La empresa de energía ha anunciado medidas para recuperar deudas en los departamentos de Atlántico, Magdalena y La Guajira, que incluyen el embargo de cuentas en billeteras digitales como Nequi, Daviplata, Rappi y más. Aunque controvertido, este enfoque respaldado por la legislación colombiana busca asegurar el cumplimiento de obligaciones. Además, Air-e ofrece planes de financiación flexibles como alternativa, priorizando acuerdos de pago antes de recurrir al embargo. Si te preguntas cómo esto podría afectarte, aquí te damos respuestas a algunas preguntas clave sobre el proceso.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.elespectador.com/economia/finanzas-personales/se-pueden-embargar-las-cuentas-de-nequi-daviplata-y-otros-como-anuncio-air-e/" target="_blank" rel="elespectador" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/27 noticia.png" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                    LA VERSIÓN DESKTOP DE CHATGPT, DE MOMENTO PARA MAC
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                    LA VERSIÓN DESKTOP DE CHATGPT, DE MOMENTO PARA MAC
+                </h3>
+                <p class="card__Text">
+                  ¡OpenAI revoluciona tu flujo de trabajo con su nueva aplicación de escritorio! Este avance marca un hito en la integración de la inteligencia artificial en nuestra vida diaria, especialmente para los desarrolladores y programadores. La aplicación, presentada en un emocionante evento en las oficinas de OpenAI, promete una experiencia de usuario sin precedentes al combinar la versatilidad del modelo GPT-4o con la eficiencia de la nueva aplicación. Con un enfoque centrado en los programadores, la app permite una interacción fluida por voz y asistencia en la codificación, optimizando el proceso de desarrollo. Además, ofrece herramientas innovadoras como análisis de código en tiempo real y captura de imágenes desde la pantalla, proporcionando una experiencia completa e integrada para cualquier tarea, desde la programación hasta la creación de contenido visual. ¡Descubre cómo la IA puede potenciar tu productividad con la nueva aplicación de OpenAI!
+                </p>
+                <div class="card__Link">
+                  <a href="https://wwwhatsnew.com/2024/05/13/la-version-desktop-de-chatgpt-de-momento-para-mac/" target="_blank" rel="WWWHATSNEW" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/26 noticia.jpeg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                    Freepik se potencia con la adquisición de Magnific: ¡Una alianza que reforzara el poder de la inteligencia artificial!
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                    Freepik se potencia con la adquisición de Magnific: ¡Una alianza que reforzara el poder de la inteligencia artificial!
+                </h3>
+                <p class="card__Text">
+                  Freepik, líder en distribución de contenidos visuales, da un paso audaz con la adquisición de Magnific, una startup española pionera en inteligencia artificial. Esta alianza no solo enriquece el arsenal de herramientas de IA de Freepik, sino que también aporta talento innovador a su equipo. Magnific, reconocida por su capacidad para redimensionar y optimizar imágenes con IA, se ha convertido en un caso de éxito en España en tiempo récord. La unión promete revolucionar la forma en que se manipulan y transforman imágenes, ofreciendo a los usuarios un control sin precedentes sobre su creatividad. Con esta adquisición, Freepik continúa consolidando su posición como referente en el campo de la inteligencia artificial generativa, marcando un hito significativo en su historia.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/robotica-e-ia/freepik-adquiere-magnific-refuerza-su-arsenal-herramientas-ia-made-in-spain" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/25 noticia" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  Descubre el Potente Chip M4 de Apple: Revoluciona la Pantalla Tandem OLED del iPad Pro
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  Descubre el Potente Chip M4 de Apple: Revoluciona la Pantalla Tandem OLED del iPad Pro 
+                </h3>
+                <p class="card__Text">
+                  El nuevo chip M4 de Apple, fabricado por TSMC en un nodo de 3 nm de segunda generación, está listo para revolucionar los iPad Pro. Con su microarquitectura rediseñada y sus 10 núcleos de CPU y GPU, este SoC lleva el rendimiento y la eficiencia a un nivel sin precedentes. La GPU, equipada con trazado de rayos por hardware y mesh shading, promete una experiencia gráfica espectacular. Además, la memoria unificada de 120 GB/s supera a todas las generaciones anteriores. Estas innovaciones permitirán a Apple exprimir al máximo la impresionante pantalla Tandem OLED del iPad Pro. ¡Descubre cómo este avance transformará tu experiencia tecnológica!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/componentes/chip-m4-apple-explicado-su-potencia-persigue-exprimir-ultima-gota-pantalla-tandem-oled-ipad-pro" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/24 noticia.jpeg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  ChatGPT se une a Stack Overflow: La alianza definitiva para los programadores
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  ChatGPT se une a Stack Overflow: La alianza definitiva para los programadores 
+                </h3>
+                <p class="card__Text">
+                  OpenAI y Stack Overflow han anunciado una alianza que promete revolucionar el mundo del desarrollo web. Esta colaboración permitirá a ChatGPT acceder a más de 58 millones de preguntas respondidas en Stack Overflow, mejorando significativamente sus respuestas sobre desarrollo web a través de la API OverflowAPI. A su vez, Stack Overflow integrará avanzados modelos de lenguaje de OpenAI, fortaleciendo su plataforma con IA de última generación. Esta fusión no solo hará de ChatGPT una herramienta más poderosa y precisa, sino que también beneficiará a programadores de todos los niveles, desde principiantes hasta expertos. Las mejoras estarán disponibles en la primera mitad de 2024.
+                </p>
+                <div class="card__Link">
+                  <a href="https://hipertextual.com/2024/05/chatgpt-se-asocia-con-stack-overflow-y-se-convierte-en-el-mejor-aliado-de-un-programador" target="_blank" rel="hipertextual" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/23 noticia.jpg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  Descubre las Mejores Herramientas y Aplicaciones para Buscar Empleo en España y en Todo el Mundo
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  Descubre las Mejores Herramientas y Aplicaciones para Buscar Empleo en España y en Todo el Mundo
+                </h3>
+                <p class="card__Text">
+                  Explora una variedad de plataformas y aplicaciones para buscar trabajo, desde líderes consolidados como InfoJobs hasta opciones especializadas como AnyWorkAnywhere, que te ofrecen oportunidades laborales tanto en España como en el extranjero. Descubre cómo LinkedIn, Google Empleos e Indeed pueden impulsar tu búsqueda de empleo con herramientas avanzadas y una amplia gama de ofertas. Además, explora servicios como EURES, que te conecta con oportunidades laborales en toda Europa, y Domestika, que ofrece empleos específicos para creativos y profesionales del diseño.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/basics/mejores-servicios-aplicaciones-para-buscar-trabajo-espana-cualquier-parte-mundo" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/22 noticia.jpg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  Windows 10 recupera terreno mientras Windows 11 pierde usuarios: domina casi el 70% del mercado
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  Windows 10 recupera terreno mientras Windows 11 pierde usuarios: domina casi el 70% del mercado
+                </h3>
+                <p class="card__Text">
+                  Windows 10 resurge mientras Windows 11 pierde terreno: ¿qué está pasando? A pesar de ser lanzado hace casi una década, el veterano sistema operativo de Microsoft sigue dominando el mercado. Mientras tanto, Windows 11 experimenta una disminución en su cuota de mercado. ¿Cuál es la razón detrás de esta tendencia? Descubre por qué los usuarios están optando por quedarse con Windows 10 y qué significa esto para el futuro de ambos sistemas operativos.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/aplicaciones/windows-11-sigue-perdiendo-usuarios-windows-10-vuelve-a-tener-casi-70-mercado" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias mundo/21 noticia.jpg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  Atención Desarrolladores: Descargar Software para Empleo podría Ser un Riesgoso Malware
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  Atención Desarrolladores: Descargar Software para Empleo podría Ser un Riesgoso Malware
+                </h3>
+                <p class="card__Text">
+                  Campaña de phishing apunta a desarrolladores con falsas entrevistas de trabajo, convirtiendo la búsqueda de empleo en una trampa mortal. Descubre cómo los ciberdelincuentes están infectando ordenadores con un troyano de acceso remoto y aprende a protegerte.
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.xataka.com/seguridad/hay-desarrolladores-descargando-software-sus-equipos-para-conseguir-nuevo-empleo-puede-ser-peligroso-malware" target="_blank" rel="Xataka" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
           <div class="swiper-slide">
             <!-- Card -->
             <article class="card">

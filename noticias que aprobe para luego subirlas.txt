@@ -1,6 +1,25 @@
-https://dev.to/techiesdiary/chatgpt-prompts-for-developers-216d?ref=dailydev
-https://css-tip.com/better-modern-css/   -----
+https://dev.to/techiesdiary/chatgpt-prompts-for-developers-216d?ref=dailydev *
+https://css-tip.com/better-modern-css/   //
 https://blog.logrocket.com/ux-design/16-practices-good-web-design/?ref=dailydev
 https://www.thecodingdev.com/2024/06/understanding-laravels-isdirty-method.html?ref=dailydev
 https://yunusemreadas.medium.com/the-ultimate-guide-to-creating-rest-apis-with-php-april-2024-bd736f0f4c6f
 https://dev.to/karsten_biedermann/goodbye-sass-welcome-back-native-css-cf?ref=dailydev
+https://bootcamp.uxdesign.cc/data-table-design-patterns-4e38188a0981
+https://toggl.com/blog/programming-languages-games?ref=dailydev
+https://dev.to/ezekiel_77/rest-api-design-rules-2c4j?ref=dailydev
+https://www.lambdatest.com/blog/css-layouts/?ref=dailydev
+https://dev.to/isaachagoel/are-sync-engines-the-future-of-web-applications-1bbi?ref=dailydev
+https://dev.to/wasp/5-reasons-why-your-side-projects-fail-to-make-money-and-how-to-avoid-them-4l5m?ref=dailydev
+https://blog.stackademic.com/reviewing-zed-the-ide-of-the-future-305d681d990c
+https://medium.com/@mehrotramanvi06/yes-madam-app-redesign-how-user-friendly-design-benefits-everyone-ce44a1ae44ce
+https://medium.com/@dev.family/ux-ui-trends-in-2024-84c98632c675
+https://blog.stackademic.com/what-are-signals-in-tailwind-how-do-they-work-and-use-1cf97929f540
+https://www.freecodecamp.org/news/create-a-developer-portfolio-as-a-2d-game/?ref=dailydev
+https://levelup.gitconnected.com/chrome-devtools-extensions-and-pro-tips-for-web-developers-85e68b7c2722
+https://astro.build/blog/future-of-astro-zero-js-view-transitions/?ref=dailydev
+https://javascript.plainenglish.io/5-cool-chrome-devtools-features-most-developers-dont-know-about-cf55d3b46c95
+https://www.chartjs.org/?ref=dailydev
+https://cssbud.com/?ref=dailydev
+https://blog.stackademic.com/top-10-clean-code-rules-831fb34caff7
+https://developer.chrome.com/blog/new-in-web-ui-io-2024?ref=dailydev
+https://medium.com/nerd-for-tech/best-5-micro-front-end-frameworks-every-developer-should-know-f9e99a359e79
