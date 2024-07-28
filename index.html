@@ -334,24 +334,38 @@
 
 
     <main class="seccion_3">
-      <section class="seccion_3__Formulary">
-        <a id="contact"></a>
-        <h1 class="seccion_3__Title">Contactanos</h1>
-        <p class="seccion_3__Text">
-            Valoramos la co-creación y la retroalimentación de nuestra comunidad. Si tienes ideas o sugerencias para mejorar, ¡compártelas! Tu opinión es esencial para nuestro crecimiento.
-        </p>
-            
-        <form action="#" method="post">
-            <input class="seccion_3__Format" type="text"  name="name" placeholder="Ingresa tu nombre:" required><br>
-            <input class="seccion_3__Format" type="email" name="email" placeholder="Ingresa tu email:"><br>
-            <textarea  class="seccion_3__Format--Text" name="text" rows="4" placeholder="Mensaje..." required></textarea><br>     
-            <input class="seccion_3__Botton" type="submit" name= "send" value="Enviar">
-        </form>
-      </section>
-      <section class="seccion_3__Box">
-        <img src="Img componentes/Imagen_Contactanos.png" class="seccion_3__Image">
-      </section>
+      <article class="seccion_3_Content">
+        <section class="seccion_3__Formulary">
+          <a id="contact"></a>
+          <h1 class="seccion_3__Title">Contactanos</h1>
+          <p class="seccion_3__Text">
+              Valoramos la co-creación y la retroalimentación de nuestra comunidad. Si tienes ideas o sugerencias para mejorar, ¡compártelas! Tu opinión es esencial para nuestro crecimiento.
+          </p>
+              
+          <form action="#" method="post">
+              <input class="seccion_3__Format" type="text"  name="name" placeholder="Ingresa tu nombre:" required><br>
+              <input class="seccion_3__Format" type="email" name="email" placeholder="Ingresa tu email:"><br>
+              <textarea  class="seccion_3__Format--Text" name="text" rows="4" placeholder="Mensaje..." required></textarea><br>     
+              <input class="seccion_3__Botton" type="submit" name= "send" value="Enviar">
+          </form>
+        </section>
+        <section class="seccion_3__Box">
+          <img src="Img componentes/Imagen_Contactanos.png" class="seccion_3__Image">
+        </section>
+      </article>
     </main>
+    <div class="overlay-emergent" id="overlay-emergent"></div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <p>
+          ¡Tu opinión cuenta! <br>
+        Nos encantaría saber qué piensas. <br>
+        Responde nuestra breve encuesta y ayúdanos a mejorar para ofrecerte la mejor experiencia informativa del SENA. <br>
+        </p>
+        <a href="https://forms.gle/ta6oeTDpKZis4Qgh6" target="_blank" class="close-btn-A">Responder Encuesta</a>
+        <button class="close-btn" id="closeBtn">Cerrar</button>
+      </div>
+   </div>
       <?php 
       include("registrar.php")
       ?>
@@ -361,7 +375,7 @@
         <div class="footer__Box">
           <li><a href="#">Direccion: Kilometro 7 Via Floridablanca -<br> Rincon de Giron</a></li>
           <!-- Contador de: https://www.contadorvisitasgratis.com -->
-            <li><a title="descargar contador de visitas"><img src="https://counter4.optistats.ovh/private/contadorvisitasgratis.php?c=2cbcj74h4wrqdhf5mgtqzddhh3r9xend" border="0" title="descargar contador de visitas" alt="descargar contador de visitas"></a></li>  
+            <!-- <li><a title="descargar contador de visitas"><img src="https://counter4.optistats.ovh/private/contadorvisitasgratis.php?c=2cbcj74h4wrqdhf5mgtqzddhh3r9xend" border="0" title="descargar contador de visitas" alt="descargar contador de visitas"></a></li>   -->
           <li>Email: <a href="#" class="footer__Email">jdolave15@soy.sena.edu.co</a></li>
           <li class="footer__Icons">
             <a href="#" target="_blank" rel="noopener noreferrer" class="fa-brands fa-facebook"></a>

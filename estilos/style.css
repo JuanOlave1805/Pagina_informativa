@@ -354,16 +354,20 @@ header.abajo{
 
 /* Seccion 3  Formulario */
 .seccion_3{
+    width: 100%;
     background-color: var(--text);
-    padding: 20px 80px;
+    color: var(--main-bg-color-4);
+}
+.seccion_3_Content{
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding: 50px 10% 0px;
     max-width: 1900px;
     display: grid;
     gap: 10px;
     width: 100%;
     height:700px;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    color: var(--main-bg-color-4);
+    margin: 0 auto;
 }
 .seccion_3__Formulary{
     align-items: center;
@@ -502,7 +506,74 @@ header.abajo{
     font-size: clamp(14px, 4vw, 18px);
 }
 
+body.noscroll {
+    overflow: hidden;
+}
+.popup {
+    display: none;
+    position: fixed;
+    left: 35%;
+    bottom: 35vh;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 40vh;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    text-align: center;
+    position: relative;
+}
 
+.overlay-emergent {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.popup-content p {
+    font-size: clamp(12px, 5vw, 24px);
+}
+
+.close-btn,
+.close-btn-A {
+    border-radius: 10px;
+    margin: 40px 15px;
+    padding: 10px 25px;
+    font-size: clamp(10px, 3.5vw, 18px);
+    cursor: pointer;
+    border: none;
+    background-color: rgb(214, 232, 207);
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover,
+.close-btn-A:hover {
+    background-color: var(--bg-button);
+    color: white;
+}
+
+.close-btn-A {
+    text-decoration: none;
+    color: var(--fondo_primary);
+}
 
 /* media  */
 
@@ -663,7 +734,7 @@ header.abajo{
         text-align: justify;
     }
     /* Seccion 3 */
-    .seccion_3{
+    .seccion_3_Content{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -691,6 +762,11 @@ header.abajo{
         width: 90%;
     }
 
+    .popup{
+        width: 90vw;
+        left: 45%;
+    }
+
 }
 @media (max-width: 620px){
     /* Header */
@@ -713,6 +789,15 @@ header.abajo{
     .card__Title--modif{
       height: auto;
       padding: 0px 10px;
+    }
+    .popup-content{
+        height: auto;
+    }
+    .popup-content p{
+        margin-bottom: 20px;
+    }
+    .close-btn-A, .close-btn {
+        margin-top: 20px;
     }
 }
 

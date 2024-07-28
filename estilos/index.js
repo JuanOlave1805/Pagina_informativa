@@ -140,3 +140,27 @@ data.map((obj) => {
 
 $contenedor.appendChild($fragmen);
 
+
+// Ventana emergente
+document.addEventListener('DOMContentLoaded', function() {
+  let popupShown = false;
+
+  window.addEventListener('scroll', function() {
+      if (!popupShown && (window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          showPopup();
+          popupShown = true;
+      }
+  });
+
+  function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+      document.getElementById('overlay-emergent').style.display = 'block';
+      document.body.classList.add('noscroll');
+  }
+
+  document.getElementById('closeBtn').addEventListener('click', function() {
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('overlay-emergent').style.display = 'none';
+      document.body.classList.remove('noscroll');
+  });
+});
