@@ -163,4 +163,9 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('overlay-emergent').style.display = 'none';
       document.body.classList.remove('noscroll');
   });
+  document.getElementById('closeBtnA').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay-emergent').style.display = 'none';
+    document.body.classList.remove('noscroll');
+});
 });
