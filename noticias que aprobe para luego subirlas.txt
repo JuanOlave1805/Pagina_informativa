@@ -23,3 +23,17 @@ https://cssbud.com/?ref=dailydev
 https://blog.stackademic.com/top-10-clean-code-rules-831fb34caff7
 https://developer.chrome.com/blog/new-in-web-ui-io-2024?ref=dailydev
 https://medium.com/nerd-for-tech/best-5-micro-front-end-frameworks-every-developer-should-know-f9e99a359e79
+
+https://dev.to/sheraz4194/good-commit-vs-bad-commit-best-practices-for-git-1plc?ref=dailydev
+https://medium.com/@hii_mohit/8-essential-tools-for-frontend-developers-in-2024-f2bdefe2f253
+https://kamleshsah.substack.com/p/10-vs-code-extensions-to-increase?r=3hr0l7&ref=dailydev&triedRedirect=true
+https://dev.to/devluc/50-best-websites-for-web-design-inspiration-and-ideas-be6?ref=dailydev
+https://medium.com/javarevisited/top-10-tools-for-c-development-every-developer-should-know-711f590090af
+https://dev.to/vyan/how-to-structure-your-backend-code-in-nodejs-expressjs-2bdd?ref=dailydev
+https://dev.to/zacharylee/the-differences-between-object-and-object-in-typescript-f6f?ref=dailydev
+https://dev.to/appsignal/security-best-practices-for-your-nodejs-application-37ip?ref=dailydev
+https://www.freecodecamp.org/news/create-24-css-projects/?ref=dailydev
+https://roadmap.sh/?utm_source=dailydev&utm_medium=feed_display&utm_campaign=dailydev_partnership&utm_content=feed_ad
+https://hardzone.es/noticias/equipos/portatil-arranque-google-drive/
+https://www.kdnuggets.com/5-free-certifications-to-land-your-first-developer-job?ref=dailydev
+https://www.marktechpost.com/2024/05/03/15-ai-tools-for-developers-2024/?ref=dailydev

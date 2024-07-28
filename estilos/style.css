@@ -288,7 +288,7 @@ header.abajo{
       align-items: center;
       position: absolute;
       bottom: 0px;
-      font-size: clamp(13px, 3vh, 18px);
+      font-size: clamp(13px, 2.3vh, 18px);
       padding: 10px;
       width: 100%;
       color: var(--fondo_primary);
@@ -314,7 +314,7 @@ header.abajo{
       width: 100%;
       height: auto;
       margin: 10px 0px;
-      font-size: clamp(13px, 3vh, 18px);
+      font-size: clamp(13px, 2.5vh, 18px);
       color: var(--fondo_primary);
 }
 .card__Link{
