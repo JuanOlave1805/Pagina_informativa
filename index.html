@@ -3,73 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="home/style.css">
+    <title>Portal ADSO</title>
+    <link rel="shortcut icon" href="Img componentes/Logo Principal.png"/>
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd39df9d39.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header -->
-    <header class="Header">
-        <div class="Header__Logo">
-            <img src="home/Recurso 1.png" alt="Logo" class="Header__Image">
-        </div>
-        <nav>
-            <ul class="Header__Nav">
-                <li class="Header__Links"><a href="index.html">Inicio</a></li>
-                <li class="Header__Links"><a href="Contacto/index.html">Nosotros</a></li>
-           </ul>            
-        </nav>
-        <a class="Header__Button" href="noticias/index.html"><button>Noti-ADSO</button></a>
-        
-        <a onclick="openNav()" class="Header__Menu" href="#"><button>Menu</button></a>
-        <div id="Menu__Mobile" class="Header__Mobile">
-          <a onclick="closeNav()" href="" class="Header__Close">&times;</a>
-          <div class="Header__Content">
-            <a href="../index.html">Inicio</a>
-            <a href="index.html">Nosotros</a>
-            <a href="../noticias/index.html">Noti-ADSO</a>
-          </div>
-        </div>
+    <!-- Encabezado con el logo y links de la landing -->
+    <header class="header">
+      <article class="header__Container">
+        <a href="#home"><img src="Img componentes/Logo.png" alt="Logo" class="header__Image"></a>
+        <div class="row">
+          <a href="#Title--ADSO" class="header__Link" id="headerLink">Noti-ADSO</a>
+          <a href="#Title--Noticias" class="header__Link--edit" id="headerLink">Noticias del Mundo</>
+        </div> 
+        </section>
+      </article>
     </header>
+
+    <!-- Link a la seccion de inicio -->
+    <a id="home"></a>
     <!-- Main -->
-    <main class="Main">
-        <div class="Main__Box">
-            <h1 class="Main__Title">  
-                Blog informativo<br>ADSO Sena
+    <!-- 1 Seccion donde esta el astronauta y link al formulario de contacto  -->
+    <main class="seccion_1">
+        <div class="column">
+            <h1 class="seccion_1__Title">  
+                Blog informativo ADSO Sena
             </h1>
-            <p class="Main__Text">
-                Sitio informativo dedicado a <br>la informacion del area de <br> programacion del Sena.
+            <p class="seccion_1__Text">
+                Sitio informativo dedicado a la informacion del area de programacion del Sena.
             </p>
+            <button class="seccion_1__Button">
+              <a href="#contact">Contactanos</a>
+            </button>
         </div>
-        <img src="home/Image__Home.png" alt="Image__Home" class="Main__Image">
+        <img src="Img componentes/Image__Home.png" alt="Image__Home" class="seccion_1__Image">
+    </main>
+
+    <!-- Swiper -->
+    <main class="seccion_2">
+      <a id="Title--ADSO" class="links"></a>
+      <!-- Titulo de la seccion -->
+      <H1 class="seccion_2__Title-Primary" >Noticias ADSO </H1>
+      <article class="swiper mySwiper ">
+
+        
+        <div class="swiper-wrapper">
+          <!-- Card -->
+          <div class="swiper-slide">
+            <article class="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias sena/guia zajuna.jpg" alt="imagen"  class="card__Image">
+                <h3 class="card__Title">
+                  Guia de manejo de Zajuna
+                </h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">
+                  Guia de manejo de Zajuna
+                </h3>
+                <p class="card__Text">
+                   Descubre cómo Zajuna, la nueva plataforma del SENA, está transformando la forma de gestionar tus evidencias. En nuestra guía detallada, te explicamos cómo utilizar Zajuna para subir y organizar tus trabajos de manera eficiente y segura. No te pierdas esta guía completa que te ayudará a aprovechar al máximo todas las ventajas que ofrece esta herramienta. Lee la guía de manejo de Zajuna y simplifica tu proceso de gestión de evidencias con esta innovadora plataforma. ¡Haz clic y comienza a explorar!
+                </p>
+                <div class="card__Link">
+                 <a href="https://zajuna.sena.edu.co/Repositorio/Titulada/institution/SENA/Tutoriales/Aprendiz/Manual_LMS_Aprendiz.pdf" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+               </div>
+              </section>
+            </article>
+            </div>
+          <!-- Card -->
+          <div class="swiper-slide">
+           <article class="card">
+             <section class="card__Face card__Front">
+               <img src="Img noticias/noticias sena/3 oferta de formacion.svg" alt="imagen"  class="card__Image">
+               <h3 class="card__Title">
+                 3 Oferta de Formación Presencial y a Distancia 2024
+               </h3>
+             </section>
+             <section class="card__Face card__Back">
+               <h3 class="card__Title--modif">
+                 3 Oferta de Formación Presencial y a Distancia 2024
+               </h3>
+               <p class="card__Text">
+                  ¡No pierdas esta oportunidad única! El SENA abre su III Oferta de Formación Presencial y a Distancia 2024, con más de 90 programas gratuitos. Inscríbete del 24 al 30 de mayo y únete a los más de 4 mil aprendices que se sumarán a la familia SENA. Aprovecha esta chance de formarte en una institución reconocida y potencia tu futuro. ¡El SENA es gratis y te espera!
+               </p>
+               <div class="card__Link">
+                <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion199&buscador_texto=Ej%3A+Cocina%2C+Contabilidad&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+              </div>
+             </section>
+           </article>
+           </div>
+
+          <div class="swiper-slide">
+           <!-- Card -->
+          <article class="card">
+            <section class="card__Face card__Front">
+              <img src="Img noticias/noticias sena/ingles.jpg" alt="imagen"  class="card__Image">
+              <h3 class="card__Title">
+                Aprende Ingles con el Sena
+              </h3>
+            </section>
+            <section class="card__Face card__Back">
+              <h3 class="card__Title--modif">
+                Aprende Ingles con el Sena
+              </h3>
+              <p class="card__Text">
+                ¡Despierta tu potencial global con el SENA! Aprender inglés nunca fue tan emocionante como con sus programas educativos. Sumérgete en una experiencia única donde el SENA no solo enseña el idioma, sino que te lleva a explorar nuevas fronteras de oportunidades. ¡Desata tu fluidez en inglés y despierta un mundo de posibilidades con el SENA como tu guía! 🌐📚🌍
+              </p>
+              <div class="card__Link">
+                <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion199&buscador_texto=ingles&ofertaDisponible=on&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+              </div>
+            </section>
+          </article>
+          </div>
+               
+          <div class="swiper-slide">
+            <!-- Card -->
+          <article class="card">
+            <section class="card__Face card__Front">
+              <img src="Img noticias/noticias sena/certificacion.jpg" alt="Image" class="card__Image">
+              <h3 class="card__Title">
+                Certificados Sena
+              </h3>
+            </section>
+            <section class="card__Face card__Back">
+              <h3 class="card__Title--modif">
+                Certificados Sena
+              </h3>
+              <p class="card__Text">
+                ¡Antes de seguir explorando, detente un momento y sumérgete en las certificaciones que ya has conquistado en el SENA! Cada certificado es un logro, un testimonio de tu dedicación y crecimiento. Descubre el valor de tu aprendizaje, ¡explora las certificaciones SENA que has forjado y celebra tu camino hacia el conocimiento! 🌟🎓🔍
+              </p>
+              <div class="card__Link">
+                <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/certificaciones.html" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+              </div>
+            </section>
+          </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+          <article class="card" id="card">
+            <section class="card__Face card__Front">
+              <img src="Img noticias/noticias sena/inscripcion.jpg" alt="Image" class="card__Image">
+              <h3 class="card__Title">Guia de ayudas y manuales</h3>
+            </section>
+            <section class="card__Face card__Back">
+              <h3 class="card__Title--modif">Guia de ayudas y manuales</h3>
+              <p class="card__Text">
+                La Guía de Inscripción del SENA es esencial para aquellos interesados en acceder a su formación. Al leerla, podrán conocer los programas disponibles, los requisitos de ingreso, fechas clave y los procedimientos necesarios. Esto les permitirá evitar errores, cumplir con plazos importantes y maximizar sus oportunidades de capacitación. Leer la guía es el primer paso para una inscripción exitosa en el SENA.
+              </p>
+              <div class="card__Link">
+                <a href="https://portal.senasofiaplus.edu.co/index.php/ayudas" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+              </div>
+            </section>
+          </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+          <article class="card" id="card">
+            <section class="card__Face card__Front">
+              <img src="Img noticias/noticias sena/informacion.jpg" alt="Image" class="card__Image">
+              <h3 class="card__Title">Informacion de interes del aprendiz</h3>
+            </section>
+            <section class="card__Face card__Back">
+              <h3 class="card__Title--modif">Informacion de interes del aprendiz</h3>
+              <p class="card__Text">
+                La información de interés del aprendiz es como un mapa que te guía hacia el éxito. En cada detalle, encontrarás valiosos consejos y recursos que te ayudarán en tu camino de aprendizaje. ¡No subestimes el poder de estar informado y preparado! Explora, aprende y aprovecha al máximo cada oportunidad que se presenta. Tu crecimiento y éxito dependen de ello. ¡Adelante, sé un aprendiz informado y triunfador!
+              </p>
+              <div class="card__Link">
+                <a href="https://ejecuciondelaformacion.sena.edu.co/comunidad-aprendices" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+              </div>
+            </section>
+          </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card" id="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias sena/formacion titulada presencial.jpg" alt="Image" class="card__Image">
+                <h3 class="card__Title">Carreras de formacion virtual, presencial y cursos cortos</h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">Carreras de formacion virtual, presencial y cursos cortos</h3>
+                <p class="card__Text">
+                  Explora una amplia variedad de opciones educativas diseñadas para adaptarse a tus necesidades y horarios, desde carreras de formación virtual y presencial hasta cursos cortos especializados. Nuestra plataforma te ofrece flexibilidad y calidad para que puedas avanzar en tu carrera profesional o adquirir nuevas habilidades desde cualquier lugar. No pierdas la oportunidad de transformar tu futuro, visita nuestra página y descubre cómo puedes empezar hoy mismo. ¡Únete a nosotros y lleva tu educación al siguiente nivel!
+                </p>
+                <div class="card__Link">
+                  <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=ophttps://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion199&buscador_texto=ingles&ofertaDisponible=on&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1cion199&buscador_texto=Ej%3A+Cocina%2C+Contabilidad&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <!-- <div class="swiper-slide"> -->
+            <!-- Card -->
+            <!-- <article class="card" id="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias sena/formacion titulada presencial.jpg" alt="Image" class="card__Image">
+                <h3 class="card__Title">Carreras presenciales tituladas</h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">Carreras presenciales tituladas</h3>
+                <p class="card__Text">
+                  Las carreras ofrecidas por el SENA son como senderos que te llevan hacia tus metas y aspiraciones. Cada una de ellas abre puertas hacia un futuro lleno de oportunidades. Explora y encuentra la carrera que realmente te apasione, y prepárate para un viaje educativo emocionante. Tu elección puede abrir un mundo de posibilidades ante ti. Así que, no dudes en comenzar tu emocionante viaje académico en el SENA. ¡Te espera un futuro brillante!
+                </p>
+                <div class="card__Link">
+                  <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion200&amp;buscador_texto=Ej%3A+Cocina%2C+Contabilidad&amp;ofertaDisponible=on&amp;ffv=-1&amp;amp;ciudad=Ej%3A+Cali%2C+Cartagena&amp;campoEmpresa=&amp;amp;nfct=-1#fix-opcion200" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div> -->
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card" id="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias sena/manual.jpg" alt="Image" class="card__Image">
+                <h3 class="card__Title">Manual del aprendiz</h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">Manual del aprendiz</h3>
+                <p class="card__Text">
+                  Leer el manual del aprendiz es como tener a un amigo sabio siempre a tu lado. Dentro de sus páginas, te espera un mundo de conocimiento y consejos que te ayudarán en tu camino hacia el éxito. ¡No subestimes el poder de este manual! Es como una brújula que te guiará en tus aventuras de aprendizaje. Así que, no lo dudes más, sumérgete en sus páginas y prepárate para descubrir un sinfín de posibilidades que te esperan. ¡Tu futuro te lo agradecerá!
+                </p>
+                <div class="card__Link">
+                  <a href="https://www.sena.edu.co/es-co/transparencia/ProyectoNorma/proy_reglamento_aprendiz.pdf " target="_blank" rel="noopener noreferrer" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <!-- <div class="swiper-slide"> -->
+            <!-- Card -->
+            <!-- <article class="card" id="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias sena/complementarios presencial.jpg" alt="Image" class="card__Image">
+                <h3 class="card__Title">Cursos cortos, formacion complementaria presencial</h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">Cursos cortos, formacion complementaria presencial</h3>
+                <p class="card__Text">
+                  Los cursos cortos presenciales del SENA son como ventanas de oportunidad que se abren frente a ti. En ellos, encontrarás un mundo de conocimiento y experiencia que te ayudará a crecer personal y profesionalmente. ¡No dudes en explorar estos cursos y dar un paso adelante en tu camino de aprendizaje! Tu futuro brillará aún más con cada nueva habilidad que adquieras. ¡Aprovecha esta oportunidad emocionante!
+                </p>
+                <div class="card__Link">
+                  <a href="https://oferta.senasofiaplus.edu.co/sofia-oferta/buscar-oferta-educativa.html?radio=opcion201&buscador_texto=Ej%3A+Cocina%2C+Contabilidad&ofertaDisponible=on&ffv=-1&ciudad=Ej%3A+Cali%2C+Cartagena&campoEmpresa=&nfct=-1" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div> -->
+          <!-- <div class="swiper-slide"> -->
+            <!-- Card -->
+            <!-- <article class="card" id="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias sena/complementarios virtual.jpg" alt="Image" class="card__Image">
+                <h3 class="card__Title">Cursos cortos, formacion complementaria virtual</h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">Cursos cortos, formacion complementaria virtual</h3>
+                <p class="card__Text">
+                  ¡Los cursos cortos del SENA son como pequeñas ventanas de oportunidad listas para ser abiertas! Descubrirás nuevas habilidades, ampliarás tu horizonte y estarás más preparado para el mundo laboral. ¡No esperes más, sumérgete en esta experiencia de aprendizaje enriquecedora que el SENA tiene para ti! Tu futuro te lo agradecerá.
+                </p>
+                <div class="card__Link">
+                  <a href="https://ejecuciondelaformacion.sena.edu.co/cursos-cortos" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div> -->
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card" id="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias sena/biblioteca.jpg" alt="Image" class="card__Image">
+                <h3 class="card__Title">Biblioteca Sena</h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">Biblioteca Sena</h3>
+                <p class="card__Text">
+                  ¡Explorar la biblioteca del SENA es como abrir un cofre lleno de tesoros educativos! En sus estantes encontrarás conocimiento, inspiración y oportunidades para crecer. ¡No dudes en sumergirte en sus recursos y enriquecer tu mente! Tu viaje de aprendizaje está a solo unas páginas de distancia. ¡Adelante, descubre lo que la biblioteca del SENA tiene para ofrecer y prepárate para un mundo de conocimiento!
+                </p>
+                <div class="card__Link">
+                  <a href="https://biblioteca.sena.edu.co/" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <!-- Card -->
+            <article class="card" id="card">
+              <section class="card__Face card__Front">
+                <img src="Img noticias/noticias sena/pqrs.jpg" alt="Image" class="card__Image">
+                <h3 class="card__Title">PQRS Sena</h3>
+              </section>
+              <section class="card__Face card__Back">
+                <h3 class="card__Title--modif">PQRS Sena</h3>
+                <p class="card__Text">
+                  Explorar el PQRS del SENA es una puerta abierta a la mejora constante. Tu voz y opiniones son fundamentales para enriquecer nuestra institución. ¡No dudes en participar y ser parte del cambio positivo! Juntos, podemos construir un SENA mejor. ¡Tus aportes hacen la diferencia!
+                </p>
+                <div class="card__Link">
+                  <a href="https://sciudadanos.sena.edu.co/SolicitudIndex.aspx" target="_blank" rel="noopener noreferrer" >Ver mas</a>
+                </div>
+              </section>
+            </article>
+          </div>
+          
+        </div>
+        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-pagination"></div>
+      </article>
     </main>
     
+    <main class="seccion_2--modif">
+      <!-- 3 Seccion donde esta las noticias del mundo -->
+      <!-- Link de llamado conectados al header -->
+      <a id="Title--Noticias" class="links"></a>
+      <!-- Titulo de la seccion -->
+      <H1 class="seccion_2__Title-Primary" >Noticias del Mundo</H1>
+      <article class="swiper mySwiper ">
+        <div class="swiper-wrapper seccion_Noticias">
+              
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </article>
+    </main>
+
+
+    <main class="seccion_3">
+      <article class="seccion_3_Content">
+        <section class="seccion_3__Formulary">
+          <a id="contact"></a>
+          <h1 class="seccion_3__Title">Contactanos</h1>
+          <p class="seccion_3__Text">
+              Valoramos la co-creación y la retroalimentación de nuestra comunidad. Si tienes ideas o sugerencias para mejorar, ¡compártelas! Tu opinión es esencial para nuestro crecimiento.
+          </p>
+              
+          <form action="#" method="post">
+              <input class="seccion_3__Format" type="text"  name="name" placeholder="Ingresa tu nombre:" required><br>
+              <input class="seccion_3__Format" type="email" name="email" placeholder="Ingresa tu email:"><br>
+              <textarea  class="seccion_3__Format--Text" name="text" rows="4" placeholder="Mensaje..." required></textarea><br>     
+              <input class="seccion_3__Botton" type="submit" name= "send" value="Enviar">
+          </form>
+        </section>
+        <section class="seccion_3__Box">
+          <img src="Img componentes/Imagen_Contactanos.png" class="seccion_3__Image">
+        </section>
+      </article>
+    </main>
+    <div class="overlay-emergent" id="overlay-emergent"></div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <p>
+          ¡Tu opinión cuenta! <br>
+        Nos encantaría saber qué piensas. <br>
+        Responde nuestra breve encuesta y ayúdanos a mejorar para ofrecerte la mejor experiencia informativa del SENA. <br>
+        </p>
+        <a href="https://forms.gle/ta6oeTDpKZis4Qgh6" target="_blank" class="close-btn-A" id="closeBtnA">Responder Encuesta</a>
+        <button class="close-btn" id="closeBtn">Cerrar</button>
+      </div>
+   </div>
+      <?php 
+      include("registrar.php")
+      ?>
+    
     <!-- Footer -->
-    <footer class="Footer">
-        <div class="Footer__Box">
-          <h3>Contactanos</h3>
+    <footer class="footer">
+        <div class="footer__Box">
           <li><a href="#">Direccion: Kilometro 7 Via Floridablanca -<br> Rincon de Giron</a></li>
-          <li><a href="#">000 000 000</a></li>
-          <li>Email:<a href="#" class="Footer__Email">Juan@crack</a></li>
-          <li class="Footer__Icons">
-            <a href="#" class="fa-brands fa-facebook"></a>
+          <!-- Contador de: https://www.contadorvisitasgratis.com -->
+          <li><a title="descargar contador de visitas"><img src="https://counter4.optistats.ovh/private/contadorvisitasgratis.php?c=2cbcj74h4wrqdhf5mgtqzddhh3r9xend" border="0" title="descargar contador de visitas" alt="descargar contador de visitas"></a></li>  
+          <li>Email: <a href="#" class="footer__Email">jdolave15@soy.sena.edu.co</a></li>
+          <li class="footer__Icons">
+            <a href="#" target="_blank" rel="noopener noreferrer" class="fa-brands fa-facebook"></a>
             <a href="#" class="fa-brands fa-instagram"></a> 
             <a href="#" class="fa-brands fa-twitter"></a>
           </li>
         </div>
-        <div class="Footer__Box">
-          <h3> Navegacion</h3>
-          <li><a href="index.html" class="Footer__Shortcuts">Inicio</a></li>
-          <li><a href="Contacto/index.html" class="Footer__Shortcuts">Nosotros</a></li>
-          <li><a href="noticias/index.html" class="Footer__Shortcuts">Noti-ADSO</a></li>
-        </div>
     </footer>
 
 
-    <script type="text/javascript" src="home/index.js"></script>
+      
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="estilos/index.js" type="module"></script> 
 </body>
 </html>
