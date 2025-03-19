@@ -1,0 +1,1 @@
+Web informativa desarrollada con HTML, CSS, JS y PHP para el almacenamiento de noticias de software ademas de las noticias de el area de desarrollo de software del Sena Giron Centro Industrial de Mantenimiento integro
